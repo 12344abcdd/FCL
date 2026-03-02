@@ -1,0 +1,319 @@
+{
+  "Data": {
+    "RandomSeed": 2788385371605103136,
+    "generatorName": "default",
+    "BorderCenterZ": 0.0,
+    "Difficulty": 2,
+    "BorderSizeLerpTime": 0,
+    "raining": 0,
+    "DimensionData": {
+      "1": {
+        "DragonFight": {
+          "Gateways": [
+            14,
+            13,
+            8,
+            19,
+            15,
+            11,
+            1,
+            6,
+            4,
+            7,
+            10,
+            16,
+            0,
+            2,
+            5,
+            12,
+            18,
+            9,
+            17,
+            3
+          ],
+          "DragonKilled": 1,
+          "PreviouslyKilled": 1
+        }
+      }
+    },
+    "Time": 62807,
+    "GameType": 1,
+    "MapFeatures": 1,
+    "BorderCenterX": 0.0,
+    "BorderDamagePerBlock": 0.2,
+    "BorderWarningBlocks": 5.0,
+    "BorderSizeLerpTarget": 60000000.0,
+    "Version": {
+      "Snapshot": 0,
+      "Id": 1343,
+      "Name": "1.12.2"
+    },
+    "DayTime": 62807,
+    "initialized": 1,
+    "allowCommands": 1,
+    "SizeOnDisk": 0,
+    "GameRules": {
+      "doTileDrops": "true",
+      "doFireTick": "true",
+      "gameLoopFunction": "-",
+      "maxCommandChainLength": "65536",
+      "reducedDebugInfo": "false",
+      "naturalRegeneration": "true",
+      "disableElytraMovementCheck": "false",
+      "doMobLoot": "true",
+      "announceAdvancements": "true",
+      "keepInventory": "false",
+      "doEntityDrops": "true",
+      "doLimitedCrafting": "false",
+      "mobGriefing": "true",
+      "randomTickSpeed": "3",
+      "commandBlockOutput": "true",
+      "spawnRadius": "10",
+      "doMobSpawning": "true",
+      "maxEntityCramming": "24",
+      "logAdminCommands": "true",
+      "spectatorsGenerateChunks": "true",
+      "doWeatherCycle": "true",
+      "sendCommandFeedback": "true",
+      "doDaylightCycle": "true",
+      "showDeathMessages": "true"
+    },
+    "Player": {
+      "HurtByTimestamp": 0,
+      "SleepTimer": 0,
+      "Attributes": [
+        {
+          "Base": 20.0,
+          "Name": "generic.maxHealth"
+        },
+        {
+          "Base": 0.0,
+          "Name": "generic.knockbackResistance"
+        },
+        {
+          "Base": 0.10000000149011612,
+          "Name": "generic.movementSpeed"
+        },
+        {
+          "Base": 0.0,
+          "Name": "generic.armor"
+        },
+        {
+          "Base": 0.0,
+          "Name": "generic.armorToughness"
+        },
+        {
+          "Base": 1.0,
+          "Name": "generic.attackDamage"
+        },
+        {
+          "Base": 4.0,
+          "Name": "generic.attackSpeed"
+        },
+        {
+          "Base": 0.0,
+          "Name": "generic.luck"
+        }
+      ],
+      "Invulnerable": 0,
+      "FallFlying": 0,
+      "PortalCooldown": 0,
+      "AbsorptionAmount": 0.0,
+      "abilities": {
+        "invulnerable": 1,
+        "mayfly": 1,
+        "instabuild": 0,
+        "walkSpeed": 0.10000000149011612,
+        "mayBuild": 0,
+        "flying": 1,
+        "flySpeed": 0.05000000074505806
+      },
+      "FallDistance": 0.0,
+      "recipeBook": {
+        "recipes": [
+          "minecraft:yellow_concrete_powder",
+          "minecraft:white_concrete_powder",
+          "minecraft:repeater",
+          "minecraft:redstone_torch",
+          "minecraft:red_concrete_powder",
+          "minecraft:purple_concrete_powder",
+          "minecraft:piston",
+          "minecraft:pink_concrete_powder",
+          "minecraft:orange_concrete_powder",
+          "minecraft:noteblock",
+          "minecraft:magenta_concrete_powder",
+          "minecraft:lime_concrete_powder",
+          "minecraft:light_gray_concrete_powder",
+          "minecraft:light_blue_concrete_powder",
+          "minecraft:green_concrete_powder",
+          "minecraft:gray_concrete_powder",
+          "minecraft:dropper",
+          "minecraft:cyan_concrete_powder",
+          "minecraft:compass",
+          "minecraft:coarse_dirt",
+          "minecraft:clock",
+          "minecraft:brown_concrete_powder",
+          "minecraft:blue_concrete_powder",
+          "minecraft:black_concrete_powder"
+        ],
+        "isFilteringCraftable": 0,
+        "toBeDisplayed": [
+          "minecraft:yellow_concrete_powder",
+          "minecraft:white_concrete_powder",
+          "minecraft:repeater",
+          "minecraft:redstone_torch",
+          "minecraft:red_concrete_powder",
+          "minecraft:purple_concrete_powder",
+          "minecraft:piston",
+          "minecraft:pink_concrete_powder",
+          "minecraft:orange_concrete_powder",
+          "minecraft:noteblock",
+          "minecraft:magenta_concrete_powder",
+          "minecraft:lime_concrete_powder",
+          "minecraft:light_gray_concrete_powder",
+          "minecraft:light_blue_concrete_powder",
+          "minecraft:green_concrete_powder",
+          "minecraft:gray_concrete_powder",
+          "minecraft:dropper",
+          "minecraft:cyan_concrete_powder",
+          "minecraft:compass",
+          "minecraft:coarse_dirt",
+          "minecraft:clock",
+          "minecraft:brown_concrete_powder",
+          "minecraft:blue_concrete_powder",
+          "minecraft:black_concrete_powder"
+        ],
+        "isGuiOpen": 0
+      },
+      "DeathTime": 0,
+      "XpSeed": 363317756,
+      "XpTotal": 0,
+      "playerGameType": 3,
+      "seenCredits": 0,
+      "Motion": [
+        0.0,
+        0.0,
+        0.0
+      ],
+      "UUIDLeast": -5022087720894585329,
+      "Health": 20.0,
+      "foodSaturationLevel": 5.0,
+      "Air": 300,
+      "OnGround": 0,
+      "Dimension": 0,
+      "Rotation": [
+        92.70002746582031,
+        33.00000762939453
+      ],
+      "XpLevel": 0,
+      "Score": 0,
+      "UUIDMost": 3675381238416489852,
+      "Sleeping": 0,
+      "Pos": [
+        Infinity,
+        74.13066767604509,
+        0.5
+      ],
+      "Fire": 0,
+      "posZBig": "0.500000000000000000000000",
+      "XpP": 0.0,
+      "EnderItems": [],
+      "DataVersion": 1343,
+      "foodLevel": 20,
+      "foodExhaustionLevel": 0.0,
+      "HurtTime": 0,
+      "SelectedItemSlot": 0,
+      "posXBig": "179699999999999995905583193224901611072291632858140147022196965453183254804882333283158350892704195965340850558876415698952989333541237197049756210812543716071112914325883132079881143218860183987564403694835026082366930530891133544472016095261267320024522778316642355122561812896796181678766044130382320762880.000000000000000000000000",
+      "ActiveEffects": [
+        {
+          "Ambient": 0,
+          "ShowParticles": 0,
+          "Duration": 19956371,
+          "Id": 16,
+          "Amplifier": 0
+        },
+        {
+          "Ambient": 0,
+          "ShowParticles": 0,
+          "Duration": 19959266,
+          "Id": 13,
+          "Amplifier": 0
+        }
+      ],
+      "Inventory": [
+        {
+          "Slot": 0,
+          "id": "minecraft:redstone",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 1,
+          "id": "minecraft:redstone_torch",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 2,
+          "id": "minecraft:repeater",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 4,
+          "id": "minecraft:tnt",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 5,
+          "id": "minecraft:concrete_powder",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 6,
+          "id": "minecraft:command_block",
+          "Count": 1,
+          "Damage": 0
+        },
+        {
+          "Slot": 7,
+          "id": "minecraft:spawn_egg",
+          "Count": 1,
+          "tag": {
+            "EntityTag": {
+              "id": "minecraft:villager"
+            }
+          },
+          "Damage": 0
+        },
+        {
+          "Slot": 8,
+          "id": "minecraft:diamond_sword",
+          "Count": 1,
+          "Damage": 0
+        }
+      ],
+      "foodTickTimer": 0
+    },
+    "SpawnY": 64,
+    "rainTime": 72413,
+    "thunderTime": 42633,
+    "SpawnZ": "444",
+    "hardcore": 0,
+    "DifficultyLocked": 0,
+    "SpawnX": "380",
+    "clearWeatherTime": 0,
+    "thundering": 0,
+    "generatorVersion": 1,
+    "version": 19133,
+    "BorderSafeZone": 5.0,
+    "generatorOptions": "",
+    "LastPlayed": 1766204127387,
+    "BorderWarningTime": 15.0,
+    "LevelName": "新的世界",
+    "BorderSize": 60000000.0,
+    "DataVersion": 1343
+  }
+}
