@@ -22,4 +22,16 @@
 hs_err_pid*
 replay_pid*
 saves/
-versions/
+.fabric/
+
+*.gz
+
+# 忽略大文件、库文件、so 文件、cef 等
+*.so
+*.dll
+*.dylib
+*/libtorch*/*
+*/mcef/*
+*/libraries/*
+
+*.jar

@@ -1,0 +1,28 @@
+Opening loading screen
+Extracted flatlaf.jar
+Failed to setup IPC client. Aborting.
+java.io.IOException: Cannot run program "/data/data/com.tungsten.fcl/app_runtime/java/jre21/bin/java" (in directory "/storage/emulated/0/FCL/.minecraft/versions/1.21.1-Fabric-test/.cache/mod-loading-screen"): error=13, Permission denied
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at java.base/java.lang.ProcessBuilder.start(Unknown Source)
+	at io.github.gaming32.modloadingscreen.ActualLoadingScreen.startLoadingScreen(ActualLoadingScreen.java:156)
+	at java.base/java.lang.invoke.MethodHandle.invokeWithArguments(Unknown Source)
+	at knot//net.lenni0451.reflect.Methods.invoke(Methods.java:76)
+	at knot//io.github.gaming32.modloadingscreen.ModLoadingScreen.init(ModLoadingScreen.java:66)
+	at knot//io.github.gaming32.modloadingscreen.ModLoadingScreen.<clinit>(ModLoadingScreen.java:88)
+	at java.base/java.lang.Class.forName0(Native Method)
+	at java.base/java.lang.Class.forName(Unknown Source)
+	at java.base/java.lang.Class.forName(Unknown Source)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.setupLanguageAdapters(FabricLoaderImpl.java:493)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.finishModLoading(FabricLoaderImpl.java:373)
+	at net.fabricmc.loader.impl.FabricLoaderImpl.freeze(FabricLoaderImpl.java:117)
+	at net.fabricmc.loader.impl.launch.knot.Knot.init(Knot.java:143)
+	at net.fabricmc.loader.impl.launch.knot.Knot.launch(Knot.java:66)
+	at net.fabricmc.loader.impl.launch.knot.KnotClient.main(KnotClient.java:23)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(Unknown Source)
+	at java.base/java.lang.reflect.Method.invoke(Unknown Source)
+	at mio.Wrapper.main(Wrapper.java:21)
+Caused by: java.io.IOException: error=13, Permission denied
+	at java.base/java.lang.ProcessImpl.forkAndExec(Native Method)
+	at java.base/java.lang.ProcessImpl.<init>(Unknown Source)
+	at java.base/java.lang.ProcessImpl.start(Unknown Source)
+	... 19 more

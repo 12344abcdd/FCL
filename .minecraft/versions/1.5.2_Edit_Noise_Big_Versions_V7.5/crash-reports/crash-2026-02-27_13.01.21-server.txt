@@ -1,0 +1,80 @@
+---- Minecraft Crash Report ----
+// This is a token for 1 free hug. Redeem at your nearest Mojangsta: [~~HUG~~]
+
+Time: 2026/2/27 13:01
+Description: Exception generating new chunk
+
+java.lang.NullPointerException: Cannot load from object array because "this.generatorCollection32" is null
+	at net.minecraft.src.NoiseGeneratorOctaves.generateNoiseOctaves(NoiseGeneratorOctaves.java:66)
+	at net.minecraft.src.NoiseGeneratorOctaves.generateNoiseOctaves(NoiseGeneratorOctaves.java:75)
+	at net.minecraft.src.ChunkProviderGenerate.initializeNoiseField(ChunkProviderGenerate.java:374)
+	at net.minecraft.src.ChunkProviderGenerate.generateTerrain(ChunkProviderGenerate.java:171)
+	at net.minecraft.src.ChunkProviderGenerate.provideChunk(ChunkProviderGenerate.java:337)
+	at net.minecraft.src.ChunkProviderServer.loadChunk(ChunkProviderServer.java:106)
+	at net.minecraft.src.PlayerInstance.<init>(PlayerInstance.java:25)
+	at net.minecraft.src.PlayerManager.getOrCreateChunkWatcher(PlayerManager.java:84)
+	at net.minecraft.src.PlayerManager.updateMountedMovingPlayer(PlayerManager.java:243)
+	at net.minecraft.src.ServerConfigurationManager.serverUpdateMountedMovingPlayer(ServerConfigurationManager.java:231)
+	at net.minecraft.src.NetServerHandler.handleFlying(NetServerHandler.java:319)
+	at net.minecraft.src.Packet10Flying.processPacket(Packet10Flying.java:48)
+	at net.minecraft.src.MemoryConnection.processReadPackets(MemoryConnection.java:74)
+	at net.minecraft.src.NetServerHandler.networkTick(NetServerHandler.java:70)
+	at net.minecraft.src.NetworkListenThread.networkTick(NetworkListenThread.java:48)
+	at net.minecraft.src.IntegratedServerListenThread.networkTick(IntegratedServerListenThread.java:99)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:657)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:560)
+	at net.minecraft.src.IntegratedServer.tick(IntegratedServer.java:124)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:470)
+	at net.minecraft.src.ThreadMinecraftServer.run(ThreadMinecraftServer.java:18)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Stacktrace:
+	at net.minecraft.src.NoiseGeneratorOctaves.generateNoiseOctaves(NoiseGeneratorOctaves.java:66)
+	at net.minecraft.src.NoiseGeneratorOctaves.generateNoiseOctaves(NoiseGeneratorOctaves.java:75)
+	at net.minecraft.src.ChunkProviderGenerate.initializeNoiseField(ChunkProviderGenerate.java:374)
+	at net.minecraft.src.ChunkProviderGenerate.generateTerrain(ChunkProviderGenerate.java:171)
+	at net.minecraft.src.ChunkProviderGenerate.provideChunk(ChunkProviderGenerate.java:337)
+
+-- Chunk to be generated --
+Details:
+	Location: 1048587,1048566
+	Position hash: 4503556678746123
+	Generator: RandomLevelSource
+Stacktrace:
+	at net.minecraft.src.ChunkProviderServer.loadChunk(ChunkProviderServer.java:106)
+	at net.minecraft.src.PlayerInstance.<init>(PlayerInstance.java:25)
+	at net.minecraft.src.PlayerManager.getOrCreateChunkWatcher(PlayerManager.java:84)
+	at net.minecraft.src.PlayerManager.updateMountedMovingPlayer(PlayerManager.java:243)
+	at net.minecraft.src.ServerConfigurationManager.serverUpdateMountedMovingPlayer(ServerConfigurationManager.java:231)
+	at net.minecraft.src.NetServerHandler.handleFlying(NetServerHandler.java:319)
+	at net.minecraft.src.Packet10Flying.processPacket(Packet10Flying.java:48)
+	at net.minecraft.src.MemoryConnection.processReadPackets(MemoryConnection.java:74)
+	at net.minecraft.src.NetServerHandler.networkTick(NetServerHandler.java:70)
+	at net.minecraft.src.NetworkListenThread.networkTick(NetworkListenThread.java:48)
+	at net.minecraft.src.IntegratedServerListenThread.networkTick(IntegratedServerListenThread.java:99)
+	at net.minecraft.server.MinecraftServer.updateTimeLightAndEntities(MinecraftServer.java:657)
+	at net.minecraft.server.MinecraftServer.tick(MinecraftServer.java:560)
+	at net.minecraft.src.IntegratedServer.tick(IntegratedServer.java:124)
+	at net.minecraft.server.MinecraftServer.run(MinecraftServer.java:470)
+	at net.minecraft.src.ThreadMinecraftServer.run(ThreadMinecraftServer.java:18)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.5.2
+	Operating System: Linux (aarch64) version Android-12
+	Java Version: 21.0.1-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1886991440 bytes (1799 MB) / 2147483648 bytes (2048 MB) up to 2363490304 bytes (2254 MB)
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx2253m -Xms2048m -XX:ActiveProcessorCount=8
+	AABB Pool Size: 1337 (74872 bytes; 0 MB) allocated, 1170 (65520 bytes; 0 MB) used
+	Suspicious classes: 
+	IntCache: cache: 0, tcache: 20, allocated: 23, tallocated: 41
+	Profiler Position: N/A (disabled)
+	Vec3 Pool Size: 1259 (70504 bytes; 0 MB) allocated, 916 (51296 bytes; 0 MB) used
+	Player Count: 1 / 8; [EntityPlayerMP['abcdd'/15, l='新的世界', x=16777232.27, y=90.50, z=16777223.93]]
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Jar signature invalidated

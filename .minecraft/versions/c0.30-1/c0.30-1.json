@@ -1,0 +1,313 @@
+{
+  "downloads": {
+    "client": {
+      "sha1": "619ea74c6d0ae5c0125d1e31e299105e100139ab",
+      "size": 291582,
+      "url": "https://zkitefly.github.io/unlisted-versions-of-minecraft/files/c0.30-1/c0.30-1.jar"
+    }
+  },
+  "id": "c0.30-1",
+  "jar": "c0.30-1",
+  "libraries": [
+    {
+      "name": "net.minecraft:launchwrapper:1.6"
+    },
+    {
+      "name": "net.sf.jopt-simple:jopt-simple:4.5"
+    },
+    {
+      "name": "org.ow2.asm:asm-all:4.1"
+    },
+    {
+      "name": "net.java.jinput:jinput:2.0.5"
+    },
+    {
+      "name": "net.java.jutils:jutils:1.0.0"
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl:2.9.0",
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.0",
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.0",
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      },
+      "rules": [
+        {
+          "action": "allow"
+        },
+        {
+          "action": "disallow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl:2.9.1-nightly-20130708-debug3",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.1-nightly-20130708-debug3",
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.1-nightly-20130708-debug3",
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      },
+      "rules": [
+        {
+          "action": "allow",
+          "os": {
+            "name": "osx",
+            "version": "^10\\.5\\.\\d$"
+          }
+        }
+      ]
+    },
+    {
+      "name": "net.java.jinput:jinput-platform:2.0.5",
+      "extract": {
+        "exclude": [
+          "META-INF/"
+        ]
+      },
+      "natives": {
+        "linux": "natives-linux",
+        "osx": "natives-osx",
+        "windows": "natives-windows"
+      }
+    }
+  ],
+  "mainClass": "com.mojang.minecraft.Minecraft",
+  "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --tweakClass net.minecraft.launchwrapper.AlphaVanillaTweaker",
+  "minimumLauncherVersion": 7,
+  "patches": [
+    {
+      "downloads": {
+        "client": {
+          "sha1": "619ea74c6d0ae5c0125d1e31e299105e100139ab",
+          "size": 291582,
+          "url": "https://zkitefly.github.io/unlisted-versions-of-minecraft/files/c0.30-1/c0.30-1.jar"
+        }
+      },
+      "id": "game",
+      "libraries": [
+        {
+          "name": "net.minecraft:launchwrapper:1.6"
+        },
+        {
+          "name": "net.sf.jopt-simple:jopt-simple:4.5"
+        },
+        {
+          "name": "org.ow2.asm:asm-all:4.1"
+        },
+        {
+          "name": "net.java.jinput:jinput:2.0.5"
+        },
+        {
+          "name": "net.java.jutils:jutils:1.0.0"
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl:2.9.0",
+          "rules": [
+            {
+              "action": "allow"
+            },
+            {
+              "action": "disallow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.0",
+          "rules": [
+            {
+              "action": "allow"
+            },
+            {
+              "action": "disallow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.0",
+          "extract": {
+            "exclude": [
+              "META-INF/"
+            ]
+          },
+          "natives": {
+            "linux": "natives-linux",
+            "osx": "natives-osx",
+            "windows": "natives-windows"
+          },
+          "rules": [
+            {
+              "action": "allow"
+            },
+            {
+              "action": "disallow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl:2.9.1-nightly-20130708-debug3",
+          "rules": [
+            {
+              "action": "allow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl_util:2.9.1-nightly-20130708-debug3",
+          "rules": [
+            {
+              "action": "allow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "org.lwjgl.lwjgl:lwjgl-platform:2.9.1-nightly-20130708-debug3",
+          "extract": {
+            "exclude": [
+              "META-INF/"
+            ]
+          },
+          "natives": {
+            "linux": "natives-linux",
+            "osx": "natives-osx",
+            "windows": "natives-windows"
+          },
+          "rules": [
+            {
+              "action": "allow",
+              "os": {
+                "name": "osx",
+                "version": "^10\\.5\\.\\d$"
+              }
+            }
+          ]
+        },
+        {
+          "name": "net.java.jinput:jinput-platform:2.0.5",
+          "extract": {
+            "exclude": [
+              "META-INF/"
+            ]
+          },
+          "natives": {
+            "linux": "natives-linux",
+            "osx": "natives-osx",
+            "windows": "natives-windows"
+          }
+        },
+        {
+          "name": "net.java.jinput:jinput-platform:2.0.5",
+          "extract": {
+            "exclude": [
+              "META-INF/"
+            ]
+          },
+          "natives": {
+            "linux": "natives-linux",
+            "osx": "natives-osx",
+            "windows": "natives-windows"
+          }
+        }
+      ],
+      "mainClass": "com.mojang.minecraft.Minecraft
+      "minecraftArguments": "${auth_player_name} ${auth_session} --gameDir ${game_directory} --assetsDir ${game_assets} --tweakClass net.minecraft.launchwrapper.AlphaVanillaTweaker",
+      "minimumLauncherVersion": 7,
+      "priority": 0,
+      "releaseTime": "2009-11-10T06:00:00+08:00",
+      "time": "2013-08-06T22:33:30+08:00",
+      "type": "old_alpha",
+      "version": "c0.30-1"
+    }
+  ],
+  "releaseTime": "2009-11-10T06:00:00+08:00",
+  "root": true,
+  "time": "2013-08-06T22:33:30+08:00",
+  "type": "old_alpha"
+}

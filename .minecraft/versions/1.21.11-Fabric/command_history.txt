@@ -1,0 +1,2 @@
+/tick freez
+/tick freeze

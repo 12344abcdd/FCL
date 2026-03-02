@@ -1,0 +1,142 @@
+---- Minecraft Crash Report ----
+// Oh - I know what I did wrong!
+
+Time: 2025-12-06 09:48:07
+Description: Exception generating new chunk
+
+java.lang.RuntimeException: We are asking a region for a chunk out of bound | 562949953421319 -1
+	at net.minecraft.server.level.WorldGenRegion.getChunk(WorldGenRegion.java:146)
+	at net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:129)
+	at net.minecraft.server.level.WorldGenRegion.getChunk(WorldGenRegion.java:120)
+	at net.minecraft.server.level.WorldGenRegion.getBlockState(WorldGenRegion.java:156)
+	at net.minecraft.world.entity.animal.goat.Goat.checkGoatSpawnRules(Goat.java:311)
+	at net.minecraft.world.entity.SpawnPlacements.checkSpawnRules(SpawnPlacements.java:64)
+	at net.minecraft.world.level.NaturalSpawner.spawnMobsForChunkGeneration(NaturalSpawner.java:358)
+	at net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.spawnOriginalMobs(NoiseBasedChunkGenerator.java:375)
+	at net.minecraft.world.level.chunk.ChunkStatus.lambda$static$16(ChunkStatus.java:148)
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:312)
+	at net.minecraft.world.level.chunk.ChunkStatus.generate(ChunkStatus.java:261)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$25(ChunkMap.java:626)
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:624)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.lambda$message$1(ChunkTaskPriorityQueueSorter.java:51)
+	at net.minecraft.Util.lambda$wrapThreadWithTaskName$5(Util.java:271)
+	at net.minecraft.util.thread.ProcessorMailbox.pollTask(ProcessorMailbox.java:86)
+	at net.minecraft.util.thread.ProcessorMailbox.pollUntil(ProcessorMailbox.java:138)
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.server.level.WorldGenRegion.getChunk(WorldGenRegion.java:146)
+	at net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:129)
+	at net.minecraft.server.level.WorldGenRegion.getChunk(WorldGenRegion.java:120)
+	at net.minecraft.server.level.WorldGenRegion.getBlockState(WorldGenRegion.java:156)
+	at net.minecraft.world.entity.animal.goat.Goat.checkGoatSpawnRules(Goat.java:311)
+	at net.minecraft.world.entity.SpawnPlacements.checkSpawnRules(SpawnPlacements.java:64)
+	at net.minecraft.world.level.NaturalSpawner.spawnMobsForChunkGeneration(NaturalSpawner.java:358)
+	at net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator.spawnOriginalMobs(NoiseBasedChunkGenerator.java:375)
+	at net.minecraft.world.level.chunk.ChunkStatus.lambda$static$16(ChunkStatus.java:148)
+	at net.minecraft.world.level.chunk.ChunkStatus$SimpleGenerationTask.doWork(ChunkStatus.java:312)
+	at net.minecraft.world.level.chunk.ChunkStatus.generate(ChunkStatus.java:261)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$25(ChunkMap.java:626)
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:624)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.lambda$message$1(ChunkTaskPriorityQueueSorter.java:51)
+	at net.minecraft.Util.lambda$wrapThreadWithTaskName$5(Util.java:271)
+	at net.minecraft.util.thread.ProcessorMailbox.pollTask(ProcessorMailbox.java:86)
+	at net.minecraft.util.thread.ProcessorMailbox.pollUntil(ProcessorMailbox.java:138)
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:94)
+
+-- Chunk to be generated --
+Details:
+	Location: 562949953421318,-1
+	Position hash: 857732738
+	Generator: net.minecraft.world.level.levelgen.NoiseBasedChunkGenerator@3325deb0
+Stacktrace:
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$25(ChunkMap.java:626)
+	at com.mojang.datafixers.util.Either$Left.map(Either.java:38)
+	at net.minecraft.server.level.ChunkMap.lambda$scheduleChunkGeneration$27(ChunkMap.java:624)
+	at java.base/java.util.concurrent.CompletableFuture$UniCompose.tryFire(Unknown Source)
+	at java.base/java.util.concurrent.CompletableFuture$Completion.run(Unknown Source)
+	at net.minecraft.server.level.ChunkTaskPriorityQueueSorter.lambda$message$1(ChunkTaskPriorityQueueSorter.java:51)
+	at net.minecraft.Util.lambda$wrapThreadWithTaskName$5(Util.java:271)
+	at net.minecraft.util.thread.ProcessorMailbox.pollTask(ProcessorMailbox.java:86)
+	at net.minecraft.util.thread.ProcessorMailbox.pollUntil(ProcessorMailbox.java:138)
+	at net.minecraft.util.thread.ProcessorMailbox.run(ProcessorMailbox.java:94)
+	at java.base/java.util.concurrent.ForkJoinTask$RunnableExecuteAction.exec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinTask.doExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool$WorkQueue.topLevelExec(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.scan(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinPool.runWorker(Unknown Source)
+	at java.base/java.util.concurrent.ForkJoinWorkerThread.run(Unknown Source)
+
+-- Affected level --
+Details:
+	All players: 1 total; [ServerPlayer['abcdd'/73, l='ServerLevel[新的世界]', x=9007199254740992.00, y=115.37, z=-2.24]]
+	Chunk stats: 5877
+	Level dimension: minecraft:overworld
+	Level spawn location: ~~ERROR~~ StackOverflowError: null
+	Level time: 25608 game time, 25608 day time
+	Level name: 新的世界
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Cheats: true
+	Level weather: Rain time: 142717 (now: false), thunder time: 7357 (now: false)
+	Known server brands: vanilla
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+Stacktrace:
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:853)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:794)
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:83)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:647)
+	at net.minecraft.server.MinecraftServer.lambda$spin$2(MinecraftServer.java:246)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+-- System Details --
+Details:
+	Minecraft Version: 1.19.2
+	Minecraft Version ID: 5bd4487e6a404d2d8dc4941b5f7f41f9
+	Operating System: Linux (aarch64) version Android-12
+	Java Version: 17.0.10-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 978858864 bytes (933 MiB) / 2065694720 bytes (1970 MiB) up to 2147483648 bytes (2048 MiB)
+	CPUs: 8
+	Processor Vendor: 0x41
+	Processor Name: SM6225
+	Identifier: 0x41 Family 8 Model 0xd09 Stepping r0xap4
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 1
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MB): 9951.35
+	Virtual memory used (MB): 10200.71
+	Swap memory total (MB): 6144.00
+	Swap memory used (MB): 3737.41
+	JVM Flags: 3 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx2048m -XX:ActiveProcessorCount=8
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['abcdd'/73, l='ServerLevel[新的世界]', x=9007199254740992.00, y=115.37, z=-2.24]]
+	Data Packs: vanilla
+	World Generation: Stable
+	Type: Integrated Server (map_client.txt)
+	Is Modded: Very likely; Client jar signature invalidated; Server jar signature invalidated
+	Launched Version: 1.19.2 64bit edition v1.0.4

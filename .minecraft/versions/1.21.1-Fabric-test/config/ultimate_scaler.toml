@@ -1,0 +1,61 @@
+# 配置文件的版本，请勿修改。
+CONFIG_VERSION = 2
+# 全局坐标偏移 (X, Y, Z)
+# 输入十进制数值，
+# 包括普通数值或用“E”/“e”表示的科学计数法数值。
+globalBigDecimalOffset = ["0", "0", "0"]
+# 全局坐标缩放 (X, Y, Z)
+# 输入十进制数值，
+# 包括普通数值或用“E”/“e”表示的科学计数法数值。
+globalBigDecimalScale = ["1", "1", "1"]
+# 打开配置菜单的快捷键
+optionMenuKeyCode = 85
+optionMenuModifierValue = 2
+# 在调试屏幕中显示偏移后的地形坐标
+showTerrainPos = true
+# 边境之地位置
+# BETA : B-1.7.3 前, 12550824
+# RELEASE : B-1.8 ~ 1.13.2, ~5.39e+16
+# DEFAULT : 默认, ~1.81e+24
+# Removed : 移除, 移除边境之地，但地形在极远距离处停止生成（~1.05e+306）。
+# CUSTOM : 自定义, 修改MaintainPrecision方法中的除数，自定义边境之地位置（默认：33554432）
+farLandsPos = "DEFAULT"
+# maintainPrecision方法除数
+# 注意：输入的数值太大或太小都可能导致地形生成出现问题，推荐的范围为512~4294967295。
+maintainPrecisionCustomDivisor = 3.3554432E7
+# 限制maintainPrecision方法返回值
+limitReturnValue = false
+# 最大返回值（10^n）
+# 调整到特定的数值可以移除边缘之地，但可能带有副作用。
+maxNoiseLogarithmValue = 7
+# 替换默认流体
+# 将任何维度的默认流体（主世界：水；下界：熔岩；末地：空气）替换为指定方块。
+replaceDefaultFluid = false
+replaceDefaultFluidBlock = "minecraft:air"
+# 替换地底熔岩
+# 将主世界地底的熔岩（Y<-54）替换为指定方块（不一定有效）。
+replaceUndergroundLava = false
+replaceUndergroundLavaBlock = "minecraft:air"
+# Y轴扩展偏移
+# 偏移更多影响Y轴生成的因素，以得到更加合理的地形生成。
+# 请注意，开启后，在不修改地形生成算法的情况下，Y轴上的所有边境之地都不会生成。
+# 偏移对象：“y_clamped_gradient”密度函数、海平面及地底熔岩。
+extraYOffset = false
+# 使用BigInteger生成地形
+# 通过BigInteger重写地形生成，可以在更大的范围内精确偏移几乎所有地形。
+# 可能导致地形生成大幅变慢、消耗更多内存。
+# 目前已重写的密度函数：
+# ["end_islands", "old_blended_noise", "noise", "shifted_noise", "shift_A", "shift_B", "shift", "weird_scaled_sampler"]
+bigIntegerRewrite = false
+# 修复“末地环”
+# 在原版中，由于整数移除，末地的地形会在以世界原点为中心的若干个圆形区域中缺失（MC-159283），这些区域被称为“末地环”；
+# 开启此选项后，“末地环”将被修复（不再生成）。
+fixEndRings = false
+# 扩展数据包字面量取值范围
+# 在数据包中，很多密度函数选项的取值范围都受到限制，
+# 例如，常数项的取值范围被限制在-1000000到1000000之间。
+# 开启此选项后，这些限制将被解除。
+# 需要重启游戏以生效。
+expandDatapackValueRange = true
+# 将地形坐标公开给其他玩家
+publicTerrainPos = true

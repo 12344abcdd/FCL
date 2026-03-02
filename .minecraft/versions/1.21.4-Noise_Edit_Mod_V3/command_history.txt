@@ -1,0 +1,5 @@
+/tp 100000000000 100 0
+/tick freeze
+/effect give @a minecraft:night_vision infinite 1 true
+/tp 2000 ~ ~
+/tp 3000 ~ ~
