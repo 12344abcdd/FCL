@@ -32,6 +32,6 @@ replay_pid*
 *.dylib
 */libtorch*/*
 */mcef/*
-*/libraries/*
+#*/libraries/*
 
 
