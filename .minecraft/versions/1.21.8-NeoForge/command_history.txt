@@ -1,0 +1,4 @@
+/tp 12550824 100 12550824
+/effect give @a minecraft:night_vision infinite 1 true
+/tp 13000000 260 12550824
+/tp 16000000 260 0

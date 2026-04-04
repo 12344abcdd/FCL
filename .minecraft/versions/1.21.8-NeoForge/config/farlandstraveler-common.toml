@@ -1,0 +1,22 @@
+#Remove the world border
+remove_world_border = true
+#Remove all limits related to coordinates, including air walls and teleport command limitations
+#[WARNING] Going outside the limits may lead to various errors!!!
+remove_coordinate_limits = true
+#Enable noises to overflow and create the Far Lands.
+#Now deprecated.
+enable_far_lands = false
+#Enable the sky grid to generate in the Fringe Lands.
+enable_sky_grid = false
+#Force the sky grid to generate even if the density value is clamped before interpolation.
+force_sky_grid = false
+#The distance between the generated location of the Far Lands and the origin of the world
+#Actually, it's the location of the first switch to the world generator
+# Default: 12550824
+# Range: > 0
+far_lands_distance = 12550824
+#The distance between the generated location of the Fringe Lands and the origin of the world
+#Actually, it's the location of the second switch to the world generator
+# Default: 14900000
+# Range: > 0
+repeating_far_lands_distance = 14900000
