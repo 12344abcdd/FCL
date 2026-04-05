@@ -1265,7 +1265,7 @@
             "text": "shift",
             "style": "Default",
             "baseInfo": {
-              "visibilityType": "IN_GAME",
+              "visibilityType": "ALWAYS",
               "xPosition": 213,
               "yPosition": 582,
               "sizeType": "PERCENTAGE",

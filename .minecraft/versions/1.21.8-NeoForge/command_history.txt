@@ -2,3 +2,11 @@
 /effect give @a minecraft:night_vision infinite 1 true
 /tp 13000000 260 12550824
 /tp 16000000 260 0
+/give @a farlandstraveler:cyan_far_lands_rose
+/give @a farlandstraveler:fake_chunk_marker
+/give @a farlandstraveler:far_lands_paeonia
+/tp 14000000 200 0
+/tp 15000000 200 0
+/tp 16000000 260 0
+/tp 16777216 200 0
+/tp 33554200 100 0
