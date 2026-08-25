@@ -1,0 +1,63 @@
+{
+  "schemaVersion": 1,
+  "id": "moreculling",
+  "version": "1.8.0",
+  "name": "More Culling",
+  "description": "Processes main resources.",
+  "authors": [
+    "FX - PR0CESS, 1Foxy2"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/moreculling",
+    "sources": "https://github.com/fxmorin/moreculling",
+    "issues": "https://github.com/fxmorin/moreculling/issues"
+  },
+  "icon": "assets/moreculling/MoreCulling.png",
+  "license": "GPL-3.0-only",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "ca.fxco.moreculling.MoreCullingFabric"
+    ],
+    "modmenu": [
+      "ca.fxco.moreculling.config.ModMenuCompat"
+    ],
+    "sodium:config_api_user": [
+      "ca.fxco.moreculling.config.sodium.MoreCullingSodiumConfigBuilder"
+    ]
+  },
+  "mixins": [
+    "moreculling.mixins.json",
+    "moreculling.fabric.mixins.json"
+  ],
+  "accessWidener": "moreculling.classTweaker",
+  "depends": {
+    "fabricloader": "\u003e\u003d0.15.0",
+    "minecraft": "\u003e\u003d26.2",
+    "java": "\u003e\u003d25",
+    "cloth-config": "\u003e\u003d16.0.0"
+  },
+  "suggests": {
+    "sodium": "\u003e\u003d0.6.7",
+    "fabric-api": "\u003e\u003d0.145.3"
+  },
+  "breaks": {
+    "sodium": "\u003c\u003d0.6.6",
+    "fabric-api": "\u003c\u003d0.145.2"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/SGFDrvA"
+      }
+    }
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/conditional-mixin-fabric-0.6.3.jar"
+    },
+    {
+      "file": "META-INF/jars/mixinsquared-fabric-0.2.0.jar"
+    }
+  ]
+}

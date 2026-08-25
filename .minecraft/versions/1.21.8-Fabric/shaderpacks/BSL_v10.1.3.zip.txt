@@ -1,0 +1,6 @@
+#Mon Jul 27 22:43:11 CST 2026
+LIGHT_SHAFT=false
+SHADOW_COLOR=false
+TAA=false
+shadowDistance=192.0
+shadowMapResolution=1536

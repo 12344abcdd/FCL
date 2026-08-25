@@ -1,0 +1,36 @@
+{
+  "jars" : [ {
+    "identifier" : {
+      "group" : "dev.isxander",
+      "artifact" : "steamdeck4j"
+    },
+    "version" : {
+      "range" : "[1.1.7,)",
+      "artifactVersion" : "1.1.7"
+    },
+    "path" : "META-INF/embeddedJars/steamdeck4j-1.1.7.jar",
+    "isObfuscated" : false
+  }, {
+    "identifier" : {
+      "group" : "dev.isxander.sdl",
+      "artifact" : "sdl-api"
+    },
+    "version" : {
+      "range" : "[release-3.4.12-4,)",
+      "artifactVersion" : "release-3.4.12-4"
+    },
+    "path" : "META-INF/embeddedJars/sdl-api-release-3.4.12-4.jar",
+    "isObfuscated" : false
+  }, {
+    "identifier" : {
+      "group" : "dev.isxander.sdl",
+      "artifact" : "sdl-backend-ffm"
+    },
+    "version" : {
+      "range" : "[release-3.4.12-4,)",
+      "artifactVersion" : "release-3.4.12-4"
+    },
+    "path" : "META-INF/embeddedJars/sdl-backend-ffm-release-3.4.12-4.jar",
+    "isObfuscated" : false
+  } ]
+}

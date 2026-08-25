@@ -1,0 +1,59 @@
+#The spawn probability of Primitive Enderman at the world center is 1/N of its spawn probability near the Far Lands
+# Default: 10
+# Range: > 1
+pem_spawn_weight = 10
+#When an entity has the "Precision Loss" Lv.256 effect and it's horizontal speed's square exceeds this threshold, a teleportation will be triggered
+# Default: 163.84
+# Range: 0.0 ~ 1.7976931348623157E308
+pe_teleport_threshold = 163.84
+#The coordinates to which an entity is teleported after triggering the "Precision Loss" Lv.256 teleportation
+#(The specific location depends on the velocity direction gained by the entity)
+# Default: 12550000
+# Range: > 0
+pe_teleport_dest = 12550000
+#Remove the world border
+remove_world_border = true
+#Remove the air walls at the world boundary (x,z 30000000)
+#[WARNING] Going outside the world boundary may lead to various errors!!!
+remove_world_boundary = true
+#Remove all limits related to coordinates, for example, teleport command limitations
+remove_coordinate_limits = true
+#The distance between the generated location of the Far Lands and the origin of the world
+#This setting is used for the determination of various mechanisms and does not affect terrain generation,
+# Default: 12550824
+# Range: > 0
+far_lands_distance = 12550824
+#The distance between the rendered location of the Stripe Lands and the origin of the world
+#Set to -1 to disable the simulation of Stripe Lands
+# Default: 16777216
+# Range: -1 ~ 33554432
+stripe_lands_distance = 16777216
+#Enable the sky grid to generate in the Fringe Lands.
+enable_sky_grid = false
+#Force the sky grid to generate even if the density value is clamped before interpolation.
+force_sky_grid = false
+#Enable the generation of The Order Of The Stone Laboratory
+generate_oots_laboratory = true
+#Disable block collisions in fake chunks
+#Unless the entity is immune to fake chunks
+fc_disable_block_collision = true
+#Disable the effects of blocks in fake chunks on entities (such as fire damage, cactus damage, etc.)
+#Unless the entity is immune to fake chunks
+fc_disable_block_effect = true
+#Disable fluid collisions in fake chunks
+#Unless the entity is immune to fake chunks
+fc_disable_fluid_collision = true
+#Prevent fluid from flowing through the edge of fake chunks
+fc_disable_fluid_flowing_behavior = true
+#Cancel the interaction between players (or other entities such as Endermen) and blocks within fake chunks
+#Unless they have the proper tool
+fc_disable_block_interaction = true
+#Make the blocks within fake chunks immune to explosions and unable to block explosive rays
+fc_disable_explosion_effect = true
+#Make ladder-like blocks in fake chunks unable to be climbed
+fc_disable_ladder_behavior = true
+#Prevent the piston in fake chunks from functioning properly
+fc_disable_piston_behavior = true
+#Enable noises to overflow and create the Far Lands
+#Now deprecated.
+enable_far_lands = false

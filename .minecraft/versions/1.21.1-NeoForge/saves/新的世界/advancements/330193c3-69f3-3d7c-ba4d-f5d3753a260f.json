@@ -1,0 +1,940 @@
+{
+  "poopsky:recipes/building_blocks/hard_toilet_from_netherite_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_red_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/portable_toilet": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_warped_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_magenta_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/music_disc_lawrence": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:poop_sapling": {
+    "criteria": {
+      "poop_sapling": "2026-08-09 11:15:23 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_blue_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_netherrack": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/food/pooburger_meat": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/food/poodding": {
+    "criteria": {
+      "poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/poolime_block_from_poop_ball": {
+    "criteria": {
+      "poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_sandstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_jungle_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_white_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_deepslate": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_prismarine_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_deepslate_tiles": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/poop_button": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_weathered_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_obsidian": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_black_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_gray_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_tuff_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_oxidized_chiseled_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cut_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/food/poop_dumplings": {
+    "criteria": {
+      "poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_redstone_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_white_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/poop_pressure_plate": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_mangrove_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_gray_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/poop_block_from_poop": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_granite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_spruce_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_emerald_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cyan_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_ginkgo_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_orange_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cyan_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_bamboo_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:recipes/decorations/crafting_table": {
+    "criteria": {
+      "unlock_right_away": "2026-08-09 11:11:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_pink_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_blue_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_lime_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_chiseled_stone_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_prismarine": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_lime_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_oxidized_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_oxidized_cut_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_crimson_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_chiseled_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_mud_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_blackstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_stone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_gray_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_copper_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_red_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_cherry_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_pink_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:root": {
+    "criteria": {
+      "join_poopsky": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_purpur_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_brown_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:husbandry/root": {
+    "criteria": {
+      "consumed_item": "2026-08-09 11:13:32 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_chiseled_quartz_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_black_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_blue_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_red_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_magenta_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/ginkgo_toilet": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_end_stone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_gray_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_andesite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_exposed_chiseled_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_deepslate_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_calcite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_lime_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_weathered_chiseled_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_red_sandstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_pink_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/raw_poop_block_from_poop_ball": {
+    "criteria": {
+      "has_poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_quartz_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/shit_from_poop": {
+    "criteria": {
+      "has_poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_birch_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_smooth_stone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_lapis_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_diorite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/misc/cocoa_beans_from_campfire_cooking_poop": {
+    "criteria": {
+      "has_poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/misc/torch_from_poop_ball": {
+    "criteria": {
+      "poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/flush_toilet": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_weathered_cut_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_gray_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_dark_oak_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_oak_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_rainbow": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_nether_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_blue_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:poop_ball": {
+    "criteria": {
+      "poop_ball": "2026-08-09 11:15:18 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_gray_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_smooth_sandstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_deepslate": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_smooth_basalt": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/wooden_toilet_from_acacia_planks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/dirt_from_poop": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_light_blue_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_purple_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_green_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_orange_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_end_stone_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_black_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_exposed_cut_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_dark_prismarine": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_andesite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_amethyst_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_smooth_quartz": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_red_nether_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_yellow_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_magenta_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_purple_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cyan_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_stone_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:end/root": {
+    "criteria": {
+      "entered_end": "2026-08-09 11:17:24 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_blue_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_iron_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_granite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/golden_flush_toilet": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_crying_obsidian": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:adventure/adventuring_time": {
+    "criteria": {
+      "minecraft:lukewarm_ocean": "2026-08-09 11:11:18 +0800",
+      "minecraft:deep_lukewarm_ocean": "2026-08-09 11:14:02 +0800"
+    },
+    "done": false
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cobbled_deepslate": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_gold_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_green_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_white_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_brown_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_diorite": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_smooth_red_sandstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_tuff": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_brown_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_blackstone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_green_terracotta": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_mossy_cobblestone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_tuff": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_polished_blackstone_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_purple_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_yellow_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_yellow_tile_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_quartz_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_diamond_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_dripstone_block": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_orange_concrete": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_mossy_stone_bricks": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_cobblestone": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "minecraft:story/enter_the_end": {
+    "criteria": {
+      "entered_end": "2026-08-09 11:17:24 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/building_blocks/hard_toilet_from_exposed_copper": {
+    "criteria": {
+      "poop": "2026-08-09 11:11:26 +0800"
+    },
+    "done": true
+  },
+  "poopsky:recipes/misc/golden_poop_from_golden_shit": {
+    "criteria": {
+      "has_golden_shit": "2026-08-09 11:16:40 +0800"
+    },
+    "done": true
+  },
+  "DataVersion": 3955
+}

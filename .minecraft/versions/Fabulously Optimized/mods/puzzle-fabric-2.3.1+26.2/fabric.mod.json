@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "id": "puzzle",
+  "version": "2.3.1",
+  "name": "Puzzle",
+  "description": "Unlocks advanced capabilities for resourcepack authors, such as customizing the splashscreen and allowing for bigger block models.",
+  "authors": [
+    "PuzzleMC",
+    "Motschen"
+  ],
+  "contact": {
+    "homepage": "https://www.midnightdust.eu/",
+    "sources": "https://github.com/TeamMidnightDust/Puzzle",
+    "issues": "https://github.com/TeamMidnightDust/Puzzle/issues"
+  },
+  "license": "MIT",
+  "icon": "assets/puzzle/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.puzzlemc.core.PuzzleClient"
+    ]
+  },
+  "mixins": [
+    "puzzle-models.mixins.json",
+    "puzzle-splashscreen.mixins.json"
+  ],
+  "depends": {
+    "fabric-api": "*",
+    "minecraft": "\u003e\u003d26.2"
+  },
+  "breaks": {
+    "entity_texture_features": "\u003c7.0.0",
+    "entity_model_features": "\u003c3.0.0"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/midnightlib-1.9.3+26.2-fabric.jar"
+    }
+  ]
+}

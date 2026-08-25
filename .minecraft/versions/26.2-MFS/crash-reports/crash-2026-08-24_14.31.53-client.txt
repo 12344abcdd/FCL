@@ -1,0 +1,102 @@
+---- Minecraft Crash Report ----
+// Oh - I know what I did wrong!
+
+Time: 2026-08-24 14:31:53
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: dev/onvoid/webrtc/logging/LogSink
+	at net.minecraft.client.multiplayer.p2p.P2PManager.<init>(P2PManager.java:33)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:702)
+	at net.minecraft.client.main.Main.main(Main.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+Caused by: java.lang.ClassNotFoundException: dev.onvoid.webrtc.logging.LogSink
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 6 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.multiplayer.p2p.P2PManager.<init>(P2PManager.java:33)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:702)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+
+
+-- Arguments at each frame (most recent first) --
+(No argument snapshots captured)
+-- System Details --
+Details:
+	Minecraft Version: 26.2 [Permanent]
+	Minecraft Version ID: 26.2
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.5-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4074766336 bytes (3886 MiB) / 4294967296 bytes (4096 MiB) up to 7071596544 bytes (6744 MiB)
+	Memory (heap): init: 4096MiB, used: 206MiB, committed: 4096MiB, max: 6744MiB
+	Memory (non-head): init: 007MiB, used: 137MiB, committed: 140MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: Qualcomm
+	Processor Name: SM8750
+	Identifier: 0x51 Family 8 Model 0x001 Stepping r4p4
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 7620.61
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 856.48
+	Space in storage for jna.tmpdir (MiB): available: 125128.68, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 125128.68, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 125128.68, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 125128.68, total: 236417.98
+	Space in storage for workdir (MiB): available: 125128.68, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 16s (1609000.00%), kernel: 4s (370000.00%), total: 20s (1979000.00%)
+	Process Virtual Size (MiB): 26878.78
+	Process Resident Size (MiB): 1629.72
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx6741m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Launched Version: 26.2-MFS
+	Launcher name: Fold Craft Launcher
+	Backend library: LWJGL version 3.4.1-snapshot+SNAPSHOT
+	Window size: <not initialized>
+	Surface Info: <no surface>
+	GFLW Platform: x11
+	Graphics Device: Adreno (TM) 830 | OpenGL ES 3.2
+	Graphics Backend: OpenGL
+	Graphics Vendor: ptitSeb & BZLZHH
+	Graphics Drivers: 3.1 §aKrypton Wrapper §bRelease 0.4.5§r
+	Graphics Device Extensions: GL_ARB_draw_indirect, GL_EXT_texture_filter_anisotropic
+	Graphics Device Type: OTHER
+	Graphics Device Features: DeviceFeatures[shaderDrawParameters=false, multiDrawDirectInterleaved=false, multiDrawDirectSeparate=true, multiDrawIndirect=false, drawIndirect=true, nonZeroFirstInstance=false, persistentMapping=false]
+	GL debug messages: <debugging unavailable>
+	Is Modded: Very likely; Client jar signature invalidated
+	Universe: 404
+	Type: Client
+	Locale: zh_CN
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 8x SM8750

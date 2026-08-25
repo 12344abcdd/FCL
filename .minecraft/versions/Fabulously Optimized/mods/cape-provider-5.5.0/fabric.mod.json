@@ -1,0 +1,66 @@
+{
+  "schemaVersion": 1,
+  "id": "cape-provider",
+  "version": "5.5.0",
+  "name": "Cape Provider",
+  "description": "Use capes from various providers",
+  "authors": [
+    "litetex"
+  ],
+  "contributors": [
+    {
+      "name": "Cael & Capes mod contributors",
+      "contact": {
+        "homepage": "https://github.com/CaelTheColher/Capes"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/cape-provider",
+    "sources": "https://github.com/litetex-oss/mcm-cape-provider",
+    "issues": "https://github.com/litetex-oss/mcm-cape-provider/issues"
+  },
+  "license": "LGPL-2.1-or-later",
+  "icon": "assets/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.litetex.capes.fabric.FabricCapes"
+    ],
+    "modmenu": [
+      "net.litetex.capes.fabric.compat.ModMenuCompatibility"
+    ]
+  },
+  "mixins": [
+    "cape-provider.mixins.json"
+  ],
+  "accessWidener": "cape-provider.classtweaker",
+  "requires": {
+    "fabric-api": "*"
+  },
+  "recommends": {
+    "fabricloader": ">=0.19.3",
+    "minecraft": ">=26.2",
+    "fabric-api": ">=0.152.1+26.2",
+    "modmenu": ">=20.0.0-beta.2"
+  },
+  "breaks": {
+    "capes": "*"
+  },
+  "conflicts": {
+    "minecraftcapes": "*",
+    "capemod": "*",
+    "cicada": "*",
+    "bettercapes": "*"
+  },
+  "custom": {
+    "cape": "Contributors",
+    "modmenu": {
+      "links": {
+        "modmenu.github_releases": "https://github.com/litetex-oss/mcm-cape-provider/releases",
+        "modmenu.modrinth": "https://modrinth.com/mod/cape-provider",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/cape-provider"
+      }
+    }
+  }
+}

@@ -1,0 +1,68 @@
+#The mode of the anvil hammer goggle info
+#Allowed Values: ALWAYS_SHOW, WEARING_HAMMER, HOLDING_HAMMER, WEARING_OR_HOLDING_HAMMER, TOGGLE_WITH_KEY
+goggle_mode = "WEARING_OR_HOLDING_HAMMER"
+#Scale of the anvil hammer radial menu
+# Default: 1.0
+# Range: 0.0 ~ 2.0
+anvil_hammer_radial_menu_scale = 1.0
+#Render distance of heliostats block entity
+# Default: 128
+# Range: 32 ~ 512
+heliostats_render_distance = 128
+#Heliostats render sunflower head model in Sunflower Plains biome
+heliostats_sunflower_model = true
+#Do not render power component tooltip when jade present
+do_not_show_tooltip_when_jade_present = false
+#Render lines between power transmitters
+render_power_transmitter_lines = true
+#Bloom effect on laser and power transmitter lines.
+render_bloom_effect = true
+#Scanline post-processing effect on 3D structure previews.
+render_scan_preview_effect = true
+#Enable ground heave shockwave particles and sound when giant anvil triggers shock mechanism
+ground_heave_particles_enabled = true
+#Number of particles per block spawned by ground heave effect
+# Default: 1
+# Range: 0 ~ 5
+ground_heave_particle_count = 1
+#Probability (0.0-1.0) each block spawns ground heave particles
+# Default: 0.8
+# Range: 0.0 ~ 1.0
+ground_heave_particle_chance = 0.8
+#A vertical item frame vertically displays items
+vertical_item_frame = false
+#Enable exhaust particles when flying with ionocraft backpack
+iono_craft_backpack_exhaust_particles_enabled = true
+#Toggle the behaviour when exiting the Category Setting menu
+#Allowed Values: CONFIRM, CANCEL
+exit_category_setting_behaviour = "CONFIRM"
+
+[gravitational_lens]
+	#Gravitational lensing post-processing effect near black holes
+	render_black_hole_lensing = true
+	#Maximum number of black/white holes rendered (2-256). Higher = more holes, lower = better performance.
+	# Default: 8
+	# Range: 2 ~ 256
+	max_hole_count = 8
+	#Lens distortion strength (higher = stronger bending, 0.002 default)
+	lens_strength = 0.001953125
+	#Event horizon radius (screen UV units, 0.083 default)
+	event_horizon_radius = 0.08333333333333333
+	#Reference distance for perspective scaling. At this distance, effect = config size. Closer = bigger.
+	lens_perspective_scale = 10.0
+	#Lens direction: >0 = convex (gravitational pull toward center), <0 = concave (push away). Magnitude scales strength.
+	lens_direction = 1.0
+
+[iono_craft_backpack_hud]
+	#If true, will show Ionocraft Backpack current power in hud
+	enabled = true
+	#If true, will show charged capacitor counts in hud
+	capacitor_count_enabled = true
+	#The Gui Hud Scale
+	# Default: 0.75
+	# Range: 0.0 ~ 8.0
+	hud_scale = 0.75
+	#The gui hud x position
+	hud_x = 8
+	#The gui hud y position
+	hud_y = 8

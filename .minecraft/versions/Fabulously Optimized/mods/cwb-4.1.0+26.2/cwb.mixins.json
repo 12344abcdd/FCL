@@ -1,0 +1,16 @@
+{
+  "required": true,
+  "package": "dev.kirant.cwb.mixin",
+  "client": [
+    "GuiMixin",
+    "MainMixin",
+    "VideoSettingsScreenMixin",
+    "WindowMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  },
+  "overwrites": {
+    "requireAnnotations": true
+  }
+}

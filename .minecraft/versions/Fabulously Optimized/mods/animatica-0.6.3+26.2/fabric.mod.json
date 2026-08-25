@@ -1,0 +1,35 @@
+{
+  "schemaVersion": 1,
+  "id": "animatica",
+  "version": "0.6.3+26.2",
+
+  "name": "Animatica Refabricated",
+  "description": "Allow for animating more game textures using the MCPatcher/OptiFine animation format",
+  "authors": [
+    "FoundationGames, coredex-source"
+  ],
+  "contact": {
+    "homepage": "https://github.com/coredex-source/AnimaticaRefabricated",
+    "sources": "https://github.com/coredex-source/AnimaticaRefabricated",
+    "issues": "https://github.com/coredex-source/AnimaticaRefabricated/issues"
+  },
+
+  "license": "LGPLv3",
+  "icon": "assets/animatica/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "io.github.foundationgames.animatica.Animatica"
+    ]
+  },
+  "mixins": [
+    "animatica.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=0.11.3",
+    "fabric-api": "*",
+    "minecraft": "~26.2-",
+    "java": ">=25"
+  }
+}

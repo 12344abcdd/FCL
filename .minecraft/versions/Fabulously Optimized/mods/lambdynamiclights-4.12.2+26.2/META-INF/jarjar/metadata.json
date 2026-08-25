@@ -1,0 +1,52 @@
+{
+	"jars": [
+		{
+			"identifier": {
+				"group": "dev.lambdaurora.lambdynamiclights",
+				"artifact": "lambdynamiclights-api"
+			},
+			"version": {
+				"range": "[4.12.2+26.2,)",
+				"artifactVersion": "4.12.2+26.2"
+			},
+			"path": "META-INF/jars/lambdynamiclights-api-4.12.2+26.2.jar",
+			"isObfuscated": false
+		},
+		{
+			"identifier": {
+				"group": "dev.yumi.mc.core",
+				"artifact": "yumi-mc-foundation"
+			},
+			"version": {
+				"range": "[1.1.1+26.2,)",
+				"artifactVersion": "1.1.1+26.2"
+			},
+			"path": "META-INF/jars/yumi-mc-foundation-1.1.1+26.2.jar",
+			"isObfuscated": false
+		},
+		{
+			"identifier": {
+				"group": "dev.lambdaurora",
+				"artifact": "spruceui"
+			},
+			"version": {
+				"range": "[11.0.0+26.2,)",
+				"artifactVersion": "11.0.0+26.2"
+			},
+			"path": "META-INF/jars/spruceui-11.0.0+26.2.jar",
+			"isObfuscated": false
+		},
+		{
+			"identifier": {
+				"group": "io.github.queerbric",
+				"artifact": "pridelib"
+			},
+			"version": {
+				"range": "[1.7.0+26.2,)",
+				"artifactVersion": "1.7.0+26.2"
+			},
+			"path": "META-INF/jars/pridelib-1.7.0+26.2.jar",
+			"isObfuscated": false
+		}
+	]
+}

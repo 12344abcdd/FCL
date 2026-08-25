@@ -1,0 +1,53 @@
+{
+  "schemaVersion": 1,
+  "id": "bettergrass",
+  "version": "1.8.7+fabric.26.2",
+  "name": "BetterGrassify",
+  "description": "Gamers can finally touch grass!?
+OptiFine's Fancy and Fast better grass for Fabric!",
+  "authors": [
+    "UltimatChamp, JayemCeekay"
+  ],
+  "contact": {
+    "homepage": "https://github.com/UltimatChamp/BetterGrassify",
+    "issues": "https://github.com/UltimatChamp/BetterGrassify/issues"
+  },
+  "license": "Apache-2.0",
+  "icon": "assets/bettergrass/icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "dev.ultimatchamp.bettergrass.BetterGrassify"
+    ],
+    "modmenu": [
+      "dev.ultimatchamp.bettergrass.config.ModMenuAPIImpl"
+    ],
+    "sodium:config_api_user": [
+      "dev.ultimatchamp.bettergrass.config.SodiumOptionsScreenBuilder"
+    ]
+  },
+  "mixins": [
+    "bettergrass.mixins.json"
+  ],
+  "depends": {
+    "minecraft": ">=26.2",
+    "fabricloader": "*",
+    "fabric-api": "*"
+  },
+  "breaks": {
+    
+  },
+  "recommends": {
+    "cloth-config": "*"
+  },
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.modrinth": "https://modrinth.com/mod/BetterGrassify",
+        "modmenu.curseforge": "https://www.curseforge.com/minecraft/mc-mods/bettergrassify",
+        "modmenu.discord": "https://discord.gg/kfKjjhv3pn"
+      },
+      "update_checker": true
+    }
+  }
+}

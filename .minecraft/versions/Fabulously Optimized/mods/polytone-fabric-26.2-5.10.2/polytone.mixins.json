@@ -1,0 +1,22 @@
+{
+  "minVersion": "0.8",
+  "required": true,
+  "compatibilityLevel": "JAVA_17",
+  "package": "net.mehvahdjukaar.polytone.mixins.fabric",
+  "mixins": [
+  ],
+  "client": [
+    "ClientLevelFabricMixin",
+    "ColorResolverRegistryAccessor",
+    "CreativeTabAccessor",
+    "EquipmentLayerRendererMixin",
+    "FabricItemGroupEntriesAccessor",
+    "FaceBakeryMixin",
+    "ParticleEngineAccessor",
+    "ParticleResourcesAccessor",
+    "RegistrySyncManagerMixin",
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

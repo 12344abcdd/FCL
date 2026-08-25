@@ -1,0 +1,106 @@
+---- Minecraft Crash Report ----
+// Don't be sad, have a hug! <3
+
+Time: 2026-08-16 16:47:26
+Description: Initializing game
+
+java.lang.NoClassDefFoundError: dev/onvoid/webrtc/logging/LogSink
+	at net.minecraft.client.multiplayer.p2p.P2PManager.<init>(P2PManager.java:33)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:702)
+	at net.minecraft.client.main.Main.main(Main.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+Caused by: java.lang.ClassNotFoundException: dev.onvoid.webrtc.logging.LogSink
+	at java.base/jdk.internal.loader.BuiltinClassLoader.loadClass(BuiltinClassLoader.java:580)
+	at java.base/java.lang.ClassLoader.loadClass(ClassLoader.java:490)
+	... 6 more
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at net.minecraft.client.multiplayer.p2p.P2PManager.<init>(P2PManager.java:33)
+	at net.minecraft.client.Minecraft.<init>(Minecraft.java:702)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:272)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+
+
+-- Arguments at each frame (most recent first) --
+(No argument snapshots captured)
+-- System Details --
+Details:
+	Minecraft Version: 26.2 [Permanent]
+	Minecraft Version ID: 26.2
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.5-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4057989120 bytes (3870 MiB) / 4294967296 bytes (4096 MiB) up to 6278873088 bytes (5988 MiB)
+	Memory (heap): init: 4096MiB, used: 224MiB, committed: 4096MiB, max: 5988MiB
+	Memory (non-head): init: 007MiB, used: 140MiB, committed: 143MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: Qualcomm
+	Processor Name: SM8750
+	Identifier: 0x51 Family 8 Model 0x001 Stepping r4p4
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 9306.04
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 1298.39
+	Space in storage for jna.tmpdir (MiB): available: 139170.39, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 139170.39, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 139170.39, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 139170.39, total: 236417.98
+	Space in storage for workdir (MiB): available: 139170.39, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 29s (2943000.00%), kernel: 5s (502000.00%), total: 34s (3445000.00%)
+	Process Virtual Size (MiB): 26104.31
+	Process Resident Size (MiB): 1619.14
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx5988m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Launched Version: 26.2-MFS
+	Launcher name: Fold Craft Launcher
+	Backend library: LWJGL version 3.4.1-snapshot+SNAPSHOT
+	Window size: <not initialized>
+	Surface Info: <no surface>
+	GFLW Platform: x11
+	Graphics Device: Adreno (TM) 830
+	Graphics Backend: Vulkan
+	Graphics Vendor: QUALCOMM
+	Graphics Drivers: 1.3.284 Qualcomm Technologies Inc. Adreno Vulkan Driver Driver Build: 208ca19915, Iab05a79315, 1770369230
+Date: 02/06/26
+Compiler Version: E031.47.18.49
+Driver Branch: 
+
+	Graphics Device Extensions: VK_KHR_synchronization2 (D), VK_EXT_multi_draw (D), VK_EXT_vertex_attribute_divisor (D), VK_KHR_android_surface (I), VK_KHR_swapchain (D), VK_KHR_surface (I), VK_KHR_push_descriptor (D), VK_EXT_debug_utils (I), VK_KHR_dynamic_rendering (D)
+	Graphics Device Type: INTEGRATED
+	Graphics Device Features: DeviceFeatures[shaderDrawParameters=true, multiDrawDirectInterleaved=true, multiDrawDirectSeparate=false, multiDrawIndirect=true, drawIndirect=true, nonZeroFirstInstance=true, persistentMapping=true]
+	GL debug messages: 
+	Is Modded: Very likely; Client jar signature invalidated
+	Universe: 404
+	Type: Client
+	Locale: zh_CN
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 8x SM8750

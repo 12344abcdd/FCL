@@ -1,0 +1,5 @@
+license = 'MPL-2.0'
+issueTrackerURL = 'https://github.com/isXander/main-menu-credits/issues'
+mods = [{modId = 'main_menu_credits', version = '1.4.0+26.2', displayName = 'Main Menu Credits', description = 'Configurable credits text on the title and pause screens.', logoFile = 'icon.png', credits = '', authors = 'isXander', displayURL = 'https://github.com/isXander/main-menu-credits'}]
+dependencies.main_menu_credits = [{modId = 'minecraft', type = 'required', versionRange = '[26.2,)'}]
+mixins = [{config = 'main_menu_credits.mixins.json'}]

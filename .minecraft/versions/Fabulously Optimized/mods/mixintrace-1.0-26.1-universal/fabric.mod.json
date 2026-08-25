@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "mixintrace",
+  "name": "MixinTrace Reborn",
+  "version": "1.0",
+  "authors": [
+    "comp500, IAFEnvoy"
+  ],
+  "contact": {
+    "sources": "https://github.com/IAFEnvoy/MixinTrace-Reborn",
+    "issues": "https://github.com/IAFEnvoy/MixinTrace-Reborn/issues"
+  },
+  "description": "Adds a list of mixins in the stack trace to crash reports.",
+  "icon": "logo.png",
+  "license": "MIT",
+  "environment": "*",
+  "entrypoints": {
+  },
+  "mixins": [
+    "mixintrace.mixins.json"
+  ],
+  "depends": {
+    "minecraft": "26.x"
+  }
+}

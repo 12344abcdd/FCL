@@ -1,0 +1,74 @@
+---- Minecraft Crash Report ----
+// I feel sad now :(
+
+Time: 2026-08-04 22:41:20
+Description: Exception in server tick loop
+
+java.lang.IllegalStateException: Trying to create chunk out of reasonable bounds: [2097143, 17]
+	at net.minecraft.server.level.GenerationChunkHolder.<init>(GenerationChunkHolder.java:39)
+	at net.minecraft.server.level.ChunkHolder.<init>(ChunkHolder.java:62)
+	at net.minecraft.server.level.ChunkMap.updateChunkScheduling(ChunkMap.java:388)
+	at net.minecraft.server.level.ChunkMap$DistanceManager.updateChunkScheduling(ChunkMap.java:1322)
+	at net.minecraft.server.level.LoadingChunkTracker.setLevel(LoadingChunkTracker.java:39)
+	at net.minecraft.world.level.lighting.DynamicGraphMinFixedPoint.runUpdates(DynamicGraphMinFixedPoint.java:136)
+	at net.minecraft.server.level.LoadingChunkTracker.runDistanceUpdates(LoadingChunkTracker.java:47)
+	at net.minecraft.server.level.DistanceManager.runAllUpdates(DistanceManager.java:68)
+	at net.minecraft.server.level.ServerChunkCache.runDistanceManagerUpdates(ServerChunkCache.java:283)
+	at net.minecraft.server.level.ServerChunkCache$MainThreadExecutor.pollTask(ServerChunkCache.java:629)
+	at net.minecraft.server.level.ServerChunkCache.pollTask(ServerChunkCache.java:279)
+	at net.minecraft.server.MinecraftServer.pollTaskInternal(MinecraftServer.java:906)
+	at net.minecraft.server.MinecraftServer.pollTask(MinecraftServer.java:894)
+	at net.minecraft.util.thread.BlockableEventLoop.managedBlock(BlockableEventLoop.java:144)
+	at net.minecraft.server.MinecraftServer.waitUntilNextTick(MinecraftServer.java:867)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:769)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- System Details --
+Details:
+	Minecraft Version: 26.2 [Permanent]
+	Minecraft Version ID: 26.2
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.3-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2368471016 bytes (2258 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	Memory (heap): init: 4096MiB, used: 1835MiB, committed: 4096MiB, max: 4096MiB
+	Memory (non-head): init: 007MiB, used: 217MiB, committed: 240MiB, max: 000MiB
+	CPUs: 8
+	processor: ~~ERROR~~ UncheckedIOException: java.nio.file.AccessDeniedException: /sys/devices/system/cpu/bus_dcvs/DDR/cur_freq
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 23716.70
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 10396.81
+	Space in storage for jna.tmpdir (MiB): available: 149741.38, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 149741.38, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 149741.38, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 149741.38, total: 236417.98
+	Space in storage for workdir (MiB): available: 149741.38, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 723s (72300000.00%), kernel: 47s (4742000.00%), total: 770s (77042000.00%)
+	Process Virtual Size (MiB): 25206.00
+	Process Resident Size (MiB): 4668.09
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx4096m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['abcdd'/11, l='ServerLevel[新的世界]', x=33554300.50, y=283.51, z=284.73]]
+	Active Data Packs: vanilla
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 6894689697671052606
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server
+	Is Modded: Very likely; Client jar signature invalidated; Server jar signature invalidated
+	Launched Version: 26.2-MFS

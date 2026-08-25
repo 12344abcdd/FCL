@@ -1,0 +1,40 @@
+{
+  "schemaVersion": 1,
+  "id": "polytone",
+  "version": "26.2-5.10.2",
+  "name": "Polytone",
+  "description": "Your Resource Packs Best Friend",
+  "authors": [
+    "MehVahdJukaar, Plantkillable"
+  ],
+  "contact": {
+    "homepage": "https://www.curseforge.com/minecraft/mc-mods/polytone",
+    "sources": "https://github.com/MehVahdJukaar/polytone"
+  },
+  "accessWidener": "polytone.accesswidener",
+  "license": "Supplementaries Team License v.1.5",
+  "icon": "icon.png",
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "net.mehvahdjukaar.polytone.platform.PolytoneFabric"
+    ]
+  },
+  "mixins": [
+    "polytone.mixins.json",
+    "polytone-common.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": "\u003e\u003d0.18",
+    "fabric-api": "*",
+    "minecraft": "\u003e\u003d26.2 \u003c26.2.1"
+  },
+  "jars": [
+    {
+      "file": "META-INF/jars/exp4j-0.4.8.jar"
+    },
+    {
+      "file": "META-INF/jars/mvel2-2.5.2.Final.jar"
+    }
+  ]
+}

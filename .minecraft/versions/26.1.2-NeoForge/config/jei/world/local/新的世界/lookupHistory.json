@@ -1,0 +1,7 @@
+[
+  {"version":1},
+  {"ingredient":{"id":"touhou_little_maid:garage_kit","components":"{\"touhou_little_maid:maid_info\":{id:\"touhou_little_maid:maid\",\"neoforge:attachments\":{\"touhou_little_maid:profile\":{model_id:\"geckolib:winefox_magical_a12dc19190c076d8d24aff8714515c8e\"}}}}"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:acacia_button"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"minecraft:acacia_slab"},"type":"item_stack","bookmarkType":"INGREDIENT"},
+  {"ingredient":{"id":"touhou_little_maid:garage_kit"},"type":"item_stack","bookmarkType":"INGREDIENT"}
+]

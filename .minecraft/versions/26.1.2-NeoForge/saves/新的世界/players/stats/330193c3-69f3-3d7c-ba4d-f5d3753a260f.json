@@ -1,0 +1,54 @@
+{
+  "stats": {
+    "minecraft:killed": {
+      "touhou_little_maid:maid": 2
+    },
+    "minecraft:custom": {
+      "minecraft:time_since_rest": 123820,
+      "minecraft:walk_one_cm": 16269,
+      "minecraft:leave_game": 8,
+      "minecraft:mob_kills": 2,
+      "minecraft:walk_under_water_one_cm": 24924,
+      "minecraft:damage_dealt": 740,
+      "minecraft:play_time": 61910,
+      "minecraft:jump": 38,
+      "minecraft:time_since_death": 61910,
+      "minecraft:drop": 9,
+      "minecraft:total_world_time": 64585,
+      "minecraft:fly_one_cm": 272743,
+      "minecraft:interact_with_anvil": 1,
+      "minecraft:walk_on_water_one_cm": 466,
+      "minecraft:crouch_one_cm": 148,
+      "minecraft:sneak_time": 729
+    },
+    "minecraft:dropped": {
+      "farlandstraveler:primitive_ender_core": 8,
+      "touhou_little_maid:garage_kit": 1
+    },
+    "minecraft:used": {
+      "touhou_little_maid:power_point": 8,
+      "touhou_little_maid:garage_kit": 23,
+      "anvilcraft:crushing_table": 1,
+      "minecraft:redstone_block": 11,
+      "farlandstraveler:primitive_ender_core": 45,
+      "minecraft:netherite_sword": 17,
+      "touhou_little_maid:smart_slab_init": 1,
+      "minecraft:tnt_minecart": 204,
+      "minecraft:oak_log": 23,
+      "touhou_little_maid:maid_spawn_egg": 79,
+      "touhou_little_maid:fairy_spawn_egg": 3,
+      "minecraft:powered_rail": 2,
+      "minecraft:iron_trapdoor": 1,
+      "anvilcraft:transcendence_anvil": 12,
+      "minecraft:anvil": 1,
+      "touhou_little_maid:sanae_gohei": 1,
+      "minecraft:ender_pearl": 35,
+      "touhou_little_maid:smart_slab_has_maid": 7
+    },
+    "minecraft:picked_up": {
+      "touhou_little_maid:garage_kit": 1,
+      "farlandstraveler:primitive_ender_core": 4
+    }
+  },
+  "DataVersion": 4790
+}

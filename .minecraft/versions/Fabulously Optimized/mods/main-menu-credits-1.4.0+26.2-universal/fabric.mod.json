@@ -1,0 +1,26 @@
+{
+  "schemaVersion" : 1,
+  "id" : "main_menu_credits",
+  "version" : "1.4.0+26.2",
+  "provides" : [ "isxander-main-menu-credits" ],
+  "environment" : "client",
+  "entrypoints" : {
+    "client" : [ "dev.isxander.mainmenucredits.fabric.MainMenuCreditsFabric" ]
+  },
+  "mixins" : [ "main_menu_credits.mixins.json", "main_menu_credits.fabric.mixins.json" ],
+  "depends" : {
+    "minecraft" : ">=26.2",
+    "fabricloader" : ">=0.19"
+  },
+  "name" : "Main Menu Credits",
+  "description" : "Configurable credits text on the title and pause screens.",
+  "authors" : [ "isXander" ],
+  "contact" : {
+    "homepage" : "https://github.com/isXander/main-menu-credits",
+    "sources" : "https://github.com/isXander/main-menu-credits",
+    "issues" : "https://github.com/isXander/main-menu-credits/issues"
+  },
+  "license" : "MPL-2.0",
+  "icon" : "icon.png",
+  "jars" : [ ]
+}

@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "id": "continuity",
+  "version": "3.0.1+26.2",
+
+  "name": "Continuity",
+  "description": "Continuity is a Minecraft mod that allows resource packs that use the OptiFine connected textures format or OptiFine emissive textures format (only for blocks and item models) to work without OptiFine.",
+  "authors": [
+    "PepperCode1"
+  ],
+  "contact": {
+    "homepage": "https://modrinth.com/mod/continuity",
+    "issues": "https://github.com/PepperCode1/Continuity/issues",
+    "sources": "https://github.com/PepperCode1/Continuity"
+  },
+
+  "license": "LGPL-3.0-only",
+  "icon": "assets/continuity/icon.png",
+
+  "environment": "client",
+  "entrypoints": {
+    "client": [
+      "me.pepperbell.continuity.client.ContinuityClient"
+    ],
+    "modmenu": [
+      "me.pepperbell.continuity.client.config.ModMenuApiImpl"
+    ],
+    "sodium:config_api_user": [
+      "me.pepperbell.continuity.client.config.SodiumConfigImpl"
+    ]
+  },
+  "mixins": [
+    "continuity.mixins.json"
+  ],
+
+  "depends": {
+    "minecraft": ">=26.2",
+    "fabric-api": "*"
+  },
+
+  "custom": {
+    "modmenu": {
+      "links": {
+        "modmenu.discord": "https://discord.gg/7rnTYXu"
+      }
+    }
+  }
+}

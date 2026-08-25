@@ -1,0 +1,122 @@
+---- Minecraft Crash Report ----
+// I bet Cylons wouldn't have this problem.
+
+Time: 2026-08-24 21:50:28
+Description: Exception initializing level
+
+java.lang.NullPointerException: Cannot invoke "java.lang.Byte.byteValue()" because the return value of "it.unimi.dsi.fastutil.objects.Object2ByteMap.get(Object)" is null
+	at net.minecraft.world.level.lighting.DynamicGraphMinFixedPoint.checkEdge(DynamicGraphMinFixedPoint.java:71)
+	at net.minecraft.server.level.ChunkTracker.update(ChunkTracker.java:70)
+	at net.minecraft.world.level.TicketStorage.addTicket(TicketStorage.java:169)
+	at net.minecraft.world.level.TicketStorage.addTicket(TicketStorage.java:143)
+	at net.minecraft.server.level.ServerChunkCache.addTicket(ServerChunkCache.java:488)
+	at net.minecraft.server.level.ServerChunkCache.getChunkFutureMainThread(ServerChunkCache.java:240)
+	at net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:168)
+	at net.minecraft.world.level.Level.getChunk(Level.java:214)
+	at net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:128)
+	at net.minecraft.world.level.Level.getChunk(Level.java:209)
+	at net.minecraft.server.level.PlayerSpawnFinder.getLevelRespawnPos(PlayerSpawnFinder.java:150)
+	at net.minecraft.server.level.PlayerSpawnFinder.getSpawnPosInChunk(PlayerSpawnFinder.java:185)
+	at net.minecraft.server.MinecraftServer.setInitialSpawn(MinecraftServer.java:512)
+	at net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:441)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:402)
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:106)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:724)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at net.minecraft.world.level.lighting.DynamicGraphMinFixedPoint.checkEdge(DynamicGraphMinFixedPoint.java:71)
+	at net.minecraft.server.level.ChunkTracker.update(ChunkTracker.java:70)
+	at net.minecraft.world.level.TicketStorage.addTicket(TicketStorage.java:169)
+	at net.minecraft.world.level.TicketStorage.addTicket(TicketStorage.java:143)
+	at net.minecraft.server.level.ServerChunkCache.addTicket(ServerChunkCache.java:488)
+	at net.minecraft.server.level.ServerChunkCache.getChunkFutureMainThread(ServerChunkCache.java:240)
+	at net.minecraft.server.level.ServerChunkCache.getChunk(ServerChunkCache.java:168)
+	at net.minecraft.world.level.Level.getChunk(Level.java:214)
+	at net.minecraft.world.level.LevelReader.getChunk(LevelReader.java:128)
+	at net.minecraft.world.level.Level.getChunk(Level.java:209)
+	at net.minecraft.server.level.PlayerSpawnFinder.getLevelRespawnPos(PlayerSpawnFinder.java:150)
+	at net.minecraft.server.level.PlayerSpawnFinder.getSpawnPosInChunk(PlayerSpawnFinder.java:185)
+
+-- Affected level --
+Details:
+	All players: 0 total; 
+	Chunk stats: 0
+	Level dimension: minecraft:overworld
+	Level time: 0 game time, 0 day time
+	Level spawn location: World: (-24,64,40), Section: (at 8,0,8 in -2,4,2; chunk contains blocks -32,-64,32 to -17,319,47), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Level name: 新的世界
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Known server brands: vanilla
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 0
+	Server weather: Rain time: 0 (now: false), thunder time: 0 (now: false)
+Stacktrace:
+	at net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1846)
+	at net.minecraft.server.MinecraftServer.createLevels(MinecraftServer.java:450)
+	at net.minecraft.server.MinecraftServer.loadLevel(MinecraftServer.java:402)
+	at net.minecraft.client.server.IntegratedServer.initServer(IntegratedServer.java:106)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:724)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- System Details --
+Details:
+	Minecraft Version: Development Version
+	Minecraft Version ID: fb4437aa548a4673a5f6b30b33e1552e
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.5-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 2185232384 bytes (2084 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	Memory (heap): init: 4096MiB, used: 2008MiB, committed: 4096MiB, max: 4096MiB
+	Memory (non-head): init: 007MiB, used: 175MiB, committed: 178MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: Qualcomm
+	Processor Name: SM8750
+	Identifier: 0x51 Family 8 Model 0x001 Stepping r4p4
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 18055.89
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 5487.83
+	Space in storage for jna.tmpdir (MiB): available: 118689.36, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 118689.36, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 118689.36, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 118689.36, total: 236417.98
+	Space in storage for workdir (MiB): available: 118689.36, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 35s (3539000.00%), kernel: 6s (573000.00%), total: 41s (4112000.00%)
+	Process Virtual Size (MiB): 24934.49
+	Process Resident Size (MiB): 2942.83
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx4096m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 0 / 8; []
+	Active Data Packs: vanilla
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -1477561769183731222
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server
+	Is Modded: Very likely; Client jar signature invalidated; Server jar signature invalidated
+	Launched Version: 26.2big

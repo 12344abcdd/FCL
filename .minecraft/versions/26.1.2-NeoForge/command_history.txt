@@ -1,0 +1,25 @@
+/time set minecraft:day
+/kill @e[type=touhou_little_maid:maid]
+/summon maid
+/kill @e[type=!minecraft:player]
+/gamerule keep_inventory true
+/tp 218 45 434
+/tick rate 10
+/tick rate 15
+/tick rate 10
+/tlm backup get @a
+/tlm backup get abcdd
+/tlm maid_num get abcdd
+/tick rate 10
+/tick rate 1
+/tick rate 10
+/effect give @a farlandstraveler:precision_loss infinite 255 true
+/tp ~ ~ 12550824
+/effect clear
+/tp -4704409.94 65.17 16777216
+/tp ~ ~ ~-1000
+/tick freeze
+/tp ~ ~ ~-1000
+/tp ~ ~ ~-10000
+/tp ~ ~ ~-100000
+/tp ~ ~ ~-1000000

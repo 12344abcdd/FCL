@@ -1,0 +1,75 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+license = "Lambda License"
+issueTrackerURL = "https://github.com/LambdAurora/LambDynamicLights/issues"
+
+[[mods]]
+	modId = "lambdynlights"
+	version = "4.12.2+26.2"
+	displayName = "LambDynamicLights"
+	description = "The most feature-complete dynamic lighting mod."
+	authors = "LambdAurora"
+	credits = "Akarys"
+	logoFile = "assets/lambdynlights/icon.png"
+	logoBlur = true
+	displayURL = "https://lambdaurora.dev/projects/lambdynamiclights"
+	issueTrackerURL = "https://github.com/LambdAurora/LambDynamicLights/issues"
+
+[[accessTransformers]]
+	file = "META-INF/accesstransformer.cfg"
+
+[[mixins]]
+	config = "lambdynlights.mixins.json"
+
+[[mixins]]
+	config = "lambdynlights.lightsource.mixins.json"
+
+[[dependencies.lambdynlights]]
+	modId = "lambdynlights_api"
+	type = "required"
+	versionRange = "[4.12.2+26.2,)"
+	ordering = "NONE"
+	side = "CLIENT"
+
+[[dependencies.lambdynlights]]
+	modId = "minecraft"
+	type = "required"
+	versionRange = "[26.2,)"
+	ordering = "NONE"
+	side = "BOTH"
+
+[[dependencies.lambdynlights]]
+	modId = "spruceui"
+	type = "required"
+	versionRange = "[11.0.0+26.2,)"
+	ordering = "NONE"
+	side = "CLIENT"
+
+[[dependencies.lambdynlights]]
+	modId = "yumi_mc_core"
+	type = "required"
+	versionRange = "[1.1.1+26.2,)"
+	ordering = "NONE"
+	side = "CLIENT"
+
+[[dependencies.lambdynlights]]
+	modId = "sodiumdynamiclights"
+	type = "incompatible"
+	ordering = "NONE"
+	side = "CLIENT"
+
+[[dependencies.lambdynlights]]
+	modId = "ryoamiclights"
+	type = "incompatible"
+	ordering = "NONE"
+	side = "CLIENT"
+
+[modproperties.lambdynlights]
+	catalogueImageIcon = "assets/lambdynlights/icon.png"
+	"sodium:config_api_user" = "dev.lambdaurora.lambdynlights.compat.SodiumCompat"
+
+[[modproperties.lambdynlights."yumi:entrypoints"."yumi:client_init"]]
+	value = "dev.lambdaurora.lambdynlights.LambDynLights::INSTANCE"
+
+[[modproperties.lambdynlights."yumi:entrypoints"."lambdynlights:platform"]]
+	value = "dev.lambdaurora.lambdynlights.platform.neoforge.NeoForgePlatform::INSTANCE"

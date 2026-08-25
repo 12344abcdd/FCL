@@ -1,0 +1,181 @@
+---- Minecraft Crash Report ----
+// I just don't know what went wrong :(
+
+Time: 2026-08-04 15:30:16
+Description: Rendering screen
+
+java.awt.HeadlessException: null
+	at java.desktop/sun.java2d.HeadlessGraphicsEnvironment.getDefaultScreenDevice(HeadlessGraphicsEnvironment.java:58) ~[?:?] {}
+	at java.desktop/sun.font.FontDesignMetrics.getDefaultFrc(FontDesignMetrics.java:157) ~[?:?] {}
+	at java.desktop/sun.font.FontDesignMetrics.getMetrics(FontDesignMetrics.java:274) ~[?:?] {}
+	at java.desktop/sun.java2d.SunGraphics2D.getFontMetrics(SunGraphics2D.java:862) ~[?:?] {}
+	at TRANSFORMER/anvillib_font@2.0.0+snapshot.502/dev.anvilcraft.lib.v2.font.sdf.SdfGlyphAtlas.<init>(SdfGlyphAtlas.java:78) ~[anvillib-font-neoforge-26.1-2.0.0+snapshot.502.jar:?] {}
+	at TRANSFORMER/anvillib_font@2.0.0+snapshot.502/dev.anvilcraft.lib.v2.font.sdf.SdfGlyphAtlas.lambda$getOrCreate$1(SdfGlyphAtlas.java:109) ~[anvillib-font-neoforge-26.1-2.0.0+snapshot.502.jar:?] {}
+	at java.base/java.util.concurrent.CompletableFuture$AsyncSupply.run(CompletableFuture.java:1789) ~[?:?] {}
+	at java.base/java.util.concurrent.ThreadPerTaskExecutor$TaskRunner.run(ThreadPerTaskExecutor.java:291) ~[?:?] {}
+	at java.base/java.lang.VirtualThread.run(VirtualThread.java:460) ~[?:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extractGui(GameRenderer.java:518) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:render.IMixinGameRenderer from mod mafglib,APP:mixins.malilib.json:render.MixinGameRenderer from mod mafglib,APP:mixins.tweakeroo.json:render.MixinGameRenderer from mod tweakerge,APP:sodium-extra.mixins.json:fps.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:panini_projection.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:prevent_shaders.MixinGameRenderer from mod sodium_extra,APP:xaerolib.mixins.json:MixinGameRenderer from mod xaerolib,APP:xaerohud.mixins.json:MixinGameRenderer from mod xaerominimap,APP:anvillib_rendering.mixins.json:GameRendererMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.render.frustum.GameRendererAccessor from mod sodium,APP:sodium-common.mixins.json:core.render.world.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.console.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:workarounds.window_minimized_state.GameRendererMixin from mod sodium,APP:mixins.tweakeroo.json:render.MixinGameRenderer_ViewBob from mod tweakerge,APP:mixins.tweakeroo.json:freecam.MixinGameRenderer_freeCam from mod tweakerge]}
+-- Screen render details --
+Details:
+	Screen name: dev.anvilcraft.resource.ageratum.client.gui.GuideScreen
+	Mouse location: Scaled: (262.000000, 128.000000). Absolute: (1310.000000, 640.000000)
+	Screen size: Scaled: (524, 256). Absolute: (2620, 1280). Scale factor of 5
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extractGui(GameRenderer.java:518) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:render.IMixinGameRenderer from mod mafglib,APP:mixins.malilib.json:render.MixinGameRenderer from mod mafglib,APP:mixins.tweakeroo.json:render.MixinGameRenderer from mod tweakerge,APP:sodium-extra.mixins.json:fps.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:panini_projection.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:prevent_shaders.MixinGameRenderer from mod sodium_extra,APP:xaerolib.mixins.json:MixinGameRenderer from mod xaerolib,APP:xaerohud.mixins.json:MixinGameRenderer from mod xaerominimap,APP:anvillib_rendering.mixins.json:GameRendererMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.render.frustum.GameRendererAccessor from mod sodium,APP:sodium-common.mixins.json:core.render.world.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.console.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:workarounds.window_minimized_state.GameRendererMixin from mod sodium,APP:mixins.tweakeroo.json:render.MixinGameRenderer_ViewBob from mod tweakerge,APP:mixins.tweakeroo.json:freecam.MixinGameRenderer_freeCam from mod tweakerge]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extract(GameRenderer.java:424) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:render.IMixinGameRenderer from mod mafglib,APP:mixins.malilib.json:render.MixinGameRenderer from mod mafglib,APP:mixins.tweakeroo.json:render.MixinGameRenderer from mod tweakerge,APP:sodium-extra.mixins.json:fps.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:panini_projection.MixinGameRenderer from mod sodium_extra,APP:sodium-extra.mixins.json:prevent_shaders.MixinGameRenderer from mod sodium_extra,APP:xaerolib.mixins.json:MixinGameRenderer from mod xaerolib,APP:xaerohud.mixins.json:MixinGameRenderer from mod xaerominimap,APP:anvillib_rendering.mixins.json:GameRendererMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.render.frustum.GameRendererAccessor from mod sodium,APP:sodium-common.mixins.json:core.render.world.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.console.GameRendererMixin from mod sodium,APP:sodium-common.mixins.json:workarounds.window_minimized_state.GameRendererMixin from mod sodium,APP:mixins.tweakeroo.json:render.MixinGameRenderer_ViewBob from mod tweakerge,APP:mixins.tweakeroo.json:freecam.MixinGameRenderer_freeCam from mod tweakerge]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.renderFrame(Minecraft.java:1377) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:client.IMixinMinecraft from mod mafglib,APP:mixins.malilib.json:client.MixinMinecraft from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_test from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_testSelector from mod mafglib,APP:mixins.tweakeroo.json:client.MixinMinecraft from mod tweakerge,APP:sodium-extra.mixins.json:gui.MixinMinecraftClient from mod sodium_extra,APP:xaerohud.mixins.json:MixinMinecraftClient from mod xaerominimap,APP:xaeroworldmap.mixins.json:MixinMinecraftClient from mod xaeroworldmap,APP:xaeroworldmap.neoforge.mixins.json:MixinForgeMinecraftClient from mod xaeroworldmap,APP:anvillib_rendering.mixins.json:MinecraftMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.MinecraftMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.debug.MinecraftRenderFrameMixin from mod sodium,APP:sodium-neoforge.mixins.json:platform.neoforge.EntrypointMixin from mod sodium,APP:fabric-networking-api-v1.client.mixins.json:accessor.MinecraftAccessor from mod fabric_networking_api_v1,APP:mixins.tweakeroo.json:freecam.MixinMinecraft_freeCam from mod tweakerge]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.runTick(Minecraft.java:1329) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:client.IMixinMinecraft from mod mafglib,APP:mixins.malilib.json:client.MixinMinecraft from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_test from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_testSelector from mod mafglib,APP:mixins.tweakeroo.json:client.MixinMinecraft from mod tweakerge,APP:sodium-extra.mixins.json:gui.MixinMinecraftClient from mod sodium_extra,APP:xaerohud.mixins.json:MixinMinecraftClient from mod xaerominimap,APP:xaeroworldmap.mixins.json:MixinMinecraftClient from mod xaeroworldmap,APP:xaeroworldmap.neoforge.mixins.json:MixinForgeMinecraftClient from mod xaeroworldmap,APP:anvillib_rendering.mixins.json:MinecraftMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.MinecraftMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.debug.MinecraftRenderFrameMixin from mod sodium,APP:sodium-neoforge.mixins.json:platform.neoforge.EntrypointMixin from mod sodium,APP:fabric-networking-api-v1.client.mixins.json:accessor.MinecraftAccessor from mod fabric_networking_api_v1,APP:mixins.tweakeroo.json:freecam.MixinMinecraft_freeCam from mod tweakerge]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:937) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:mixins.malilib.json:client.IMixinMinecraft from mod mafglib,APP:mixins.malilib.json:client.MixinMinecraft from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_test from mod mafglib,APP:mixins.malilib.json:test.MixinMinecraft_testSelector from mod mafglib,APP:mixins.tweakeroo.json:client.MixinMinecraft from mod tweakerge,APP:sodium-extra.mixins.json:gui.MixinMinecraftClient from mod sodium_extra,APP:xaerohud.mixins.json:MixinMinecraftClient from mod xaerominimap,APP:xaeroworldmap.mixins.json:MixinMinecraftClient from mod xaeroworldmap,APP:xaeroworldmap.neoforge.mixins.json:MixinForgeMinecraftClient from mod xaeroworldmap,APP:anvillib_rendering.mixins.json:MinecraftMixin from mod anvillib_rendering,APP:sodium-common.mixins.json:core.MinecraftMixin from mod sodium,APP:sodium-common.mixins.json:features.gui.hooks.debug.MinecraftRenderFrameMixin from mod sodium,APP:sodium-neoforge.mixins.json:platform.neoforge.EntrypointMixin from mod sodium,APP:fabric-networking-api-v1.client.mixins.json:accessor.MinecraftAccessor from mod fabric_networking_api_v1,APP:mixins.tweakeroo.json:freecam.MixinMinecraft_freeCam from mod tweakerge]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-client-patched-26.1.2.87.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at mio.Wrapper.main(Wrapper.java:21) [MioLaunchWrapper.jar:?] {}
+
+
+-- Uptime --
+Details:
+	JVM uptime: 64.654s
+	Wall uptime: 46.370s
+	High-res time: 63.051s
+	Client ticks: 431 ticks / 21.550s
+
+-- Affected level --
+Details:
+	All players: 1 total; LocalPlayer{name=abcdd, id=536, pos=(135.05991551148372, 73.0, 505.75873391737605), mode=SURVIVAL, permission=owner}
+	Chunk stats: 1521, 1057
+	Level dimension: minecraft:overworld
+	Level time: 44120 game time, 44119 day time
+	Level spawn location: World: (0,106,0), Section: (at 0,10,0 in 0,6,0; chunk contains blocks 0,-64,0 to 15,319,15), Region: (0,0; contains chunks 0,0 to 31,31, blocks 0,-64,0 to 511,319,511)
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 163
+	Client weather: Raining: false, thundering: false
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/sodium, mod/anvillib_rpc, mod/fabric_api_base, mod/sodium_extra, mod/jade, mod/foxified_classtweaker, mod/anvillib_moveable_entity_block, mod/mafglib,malilib, mod/anvillib_integration, mod/jei, mod/xaerolib, mod/reeses_sodium_options, mod/anvillib_config, mod/touhou_little_maid, mod/patchouli, mod/anvillib_space_select, mod/xaerominimap, mod/veinminer, mod/veinminer_client, mod/xaeroworldmap, mod/neoforge, mod/anvillib_sync, mod/anvillib_network, mod/ageratum, mod/anvillib_rendering, mod/anvillib_font, mod/anvillib_registrum, mod/anvillib_collision, mod/anvillib_explosion, mod/tweakerge,tweakeroo, mod/appleskin, mod/anvillib, mod/anvillib_wheel, mod/conditional_mixin, mod/anvillib_codec, mod/fabric_networking_api_v1, mod/anvillib_util, mod/anvillib_recipe, mod/anvillib_multiblock, mod/anvilcraft
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.3-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 3217031168 bytes (3068 MiB) / 4294967296 bytes (4096 MiB) up to 4416602112 bytes (4212 MiB)
+	Memory (heap): init: 4096MiB, used: 1020MiB, committed: 4096MiB, max: 4212MiB
+	Memory (non-head): init: 007MiB, used: 352MiB, committed: 355MiB, max: 000MiB
+	CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 21837.60
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 9021.49
+	Space in storage for jna.tmpdir (MiB): available: 150000.44, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 150000.44, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 150000.44, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 150000.44, total: 236417.98
+	Space in storage for workdir (MiB): available: 150000.44, total: 236417.98
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx4212m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Launched Version: 26.1.2-NeoForge
+	Launcher name: Fold Craft Launcher
+	Backend library: LWJGL version 3.3.6-snapshot
+	Backend API: Adreno (TM) 830 | OpenGL ES 3.2 GL version 4.0.0 MobileGlues 1.3.5, Swung0x48, BZLZHH, Tungsten
+	Window size: 2620x1280
+	GFLW Platform: x11
+	Render Extensions: GL_ARB_buffer_storage, GL_ARB_vertex_attrib_binding
+	GL debug messages: <debugging unavailable>
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server
+	Transparency: regular
+	Render Distance: 16/16 chunks
+	Resource Packs: vanilla, mod_resources, mod/sodium, mod/anvillib_rpc, mod/fabric_api_base, mod/sodium_extra, mod/jade (incompatible), mod/foxified_classtweaker, mod/anvillib_moveable_entity_block, mod/mafglib,malilib, mod/anvillib_integration, mod/jei (incompatible), mod/xaerolib (incompatible), mod/reeses_sodium_options, mod/anvillib_config, mod/touhou_little_maid (incompatible), mod/patchouli (incompatible), mod/anvillib_space_select, mod/xaerominimap (incompatible), mod/veinminer, mod/veinminer_client, mod/xaeroworldmap (incompatible), mod/neoforge (incompatible), mod/anvillib_sync, mod/anvillib_network, mod/ageratum, mod/anvillib_rendering, mod/anvillib_font, mod/anvillib_registrum, mod/anvillib_collision, mod/anvillib_explosion, mod/tweakerge,tweakeroo, mod/appleskin (incompatible), mod/anvillib, mod/anvillib_wheel, mod/conditional_mixin (incompatible), mod/anvillib_codec, mod/fabric_networking_api_v1, mod/anvillib_util, mod/anvillib_recipe, mod/anvillib_multiblock, mod/anvilcraft (incompatible)
+	Sound Cache: 1744836 bytes in 11 buffers
+	Current Language: zh_cn
+	Locale: zh_CN
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: <unknown>
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['abcdd'/536, l='ServerLevel[新的世界]', x=135.06, y=73.00, z=505.76]]
+	Active Data Packs: vanilla, mod_data, mod/sodium, mod/anvillib_rpc, mod/fabric_api_base, mod/sodium_extra, mod/jade (incompatible), mod/foxified_classtweaker, mod/anvillib_moveable_entity_block, mod/mafglib,malilib, mod/anvillib_integration, mod/jei (incompatible), mod/xaerolib (incompatible), mod/reeses_sodium_options, mod/anvillib_config, mod/touhou_little_maid (incompatible), mod/patchouli (incompatible), mod/anvillib_space_select, mod/xaerominimap (incompatible), mod/veinminer, mod/veinminer_client, mod/xaeroworldmap (incompatible), mod/neoforge, mod/anvillib_sync, mod/anvillib_network, mod/ageratum, mod/anvillib_rendering, mod/anvillib_font, mod/anvillib_registrum, mod/anvillib_collision, mod/anvillib_explosion, mod/tweakerge,tweakeroo, mod/appleskin (incompatible), mod/anvillib, mod/anvillib_wheel, mod/conditional_mixin (incompatible), mod/anvillib_codec, mod/fabric_networking_api_v1, mod/anvillib_util, mod/anvillib_recipe, mod/anvillib_multiblock, mod/anvilcraft (incompatible)
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/ageratum, mod/anvilcraft (incompatible), mod/anvillib, mod/anvillib_codec, mod/anvillib_collision, mod/anvillib_config, mod/anvillib_explosion, mod/anvillib_font, mod/anvillib_integration, mod/anvillib_moveable_entity_block, mod/anvillib_multiblock, mod/anvillib_network, mod/anvillib_recipe, mod/anvillib_registrum, mod/anvillib_rendering, mod/anvillib_rpc, mod/anvillib_space_select, mod/anvillib_sync, mod/anvillib_util, mod/anvillib_wheel, mod/appleskin (incompatible), mod/conditional_mixin (incompatible), mod/fabric_api_base, mod/fabric_networking_api_v1, mod/foxified_classtweaker, mod/jade (incompatible), mod/jei (incompatible), mod/mafglib,malilib, mod/neoforge, mod/patchouli (incompatible), mod/reeses_sodium_options, mod/sodium, mod/sodium_extra, mod/touhou_little_maid (incompatible), mod/tweakerge,tweakeroo, mod/veinminer, mod/veinminer_client, mod/xaerolib (incompatible), mod/xaerominimap (incompatible), mod/xaeroworldmap (incompatible), mod_data, mod/anvilcraft:resourcepacks/first_ancient_debris (incompatible)
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: 3998222731261364192
+	Suppressed Exceptions: ~~NONE~~
+	Class Processors: 
+		00.00%: neoforge:computing_frames (marker)
+		00.00%: neoforge:runtime_enum_extender
+		00.01%: anvillib_sync:processor
+		03.66%: neoforge:access_transformer
+		02.53%: neoforge:mixin
+		00.00%: neoforge:simple_processors_default (marker)
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00.15%: neoforge.coremods:method_redirector
+		00.10%: foxified_classtweaker:processor
+	Mod List: 
+		ageratum-neoforge-26.1.2-0.0.1+build.109.jar      |Ageratum                      |ageratum                      |0.0.1+build.109     |Manifest: e8eedff964e2aa16ac8cdb44e748a1bfd3ac39fd95969c7067849304199cb093
+		anvilcraft-neoforge-26.1.2-1.6.0+pr.4739.jar      |AnvilCraft                    |anvilcraft                    |1.6.0+pr.4739       |Manifest: 66dcc552399e50762c238af5c465146c5f03f7c73ec2db6a625e09082a423bb7
+		anvillib-neoforge-26.1.2-2.0.0+snapshot.502.jar   |AnvilLib                      |anvillib                      |2.0.0+snapshot.502  |Manifest: b31b0b32be9d011d5e96cfac07c1d1262b1be040b92ac53b1a5aad836ac74fc7
+		anvillib-codec-neoforge-26.1-2.0.0+snapshot.502.ja|AnvilLib-Codec                |anvillib_codec                |2.0.0+snapshot.502  |Manifest: 0783d6802452b6d6d41f07600a3384e6399de0f6804218f86ff8fd29f870ed8e
+		anvillib-collision-neoforge-26.1-2.0.0+snapshot.50|AnvilLib-Collision            |anvillib_collision            |2.0.0+snapshot.502  |Manifest: ae834ba332262f991889e72241373d6517a901c66ce1f58d312071bc667a7753
+		anvillib-config-neoforge-26.1-2.0.0+snapshot.502.j|AnvilLib-Config               |anvillib_config               |2.0.0+snapshot.502  |Manifest: cbc880c3e68b320697d8f8a3b6a4f96a1dfa0e0dfd2c12fe22f75e26f19740a5
+		anvillib-explosion-neoforge-26.1-2.0.0+snapshot.50|AnvilLib-Explosion            |anvillib_explosion            |2.0.0+snapshot.502  |Manifest: 9141f9f4b4ac4b15463870b0c19b071ada6ba62660b0985921bda4f3b8c936c0
+		anvillib-font-neoforge-26.1-2.0.0+snapshot.502.jar|AnvilLib-Font                 |anvillib_font                 |2.0.0+snapshot.502  |Manifest: 4bdd01e65e84e44194ab4ff1bd87d864c2bc7c1c7d7340b9928cb14b3cb5bcb1
+		anvillib-integration-neoforge-26.1-2.0.0+snapshot.|AnvilLib-Integration          |anvillib_integration          |2.0.0+snapshot.502  |Manifest: 21790cb0ffa730ee906893facec4ba17f583f6f7eaed505a16ecc2e6b9215dd8
+		anvillib-moveable-entity-block-neoforge-26.1-2.0.0|AnvilLib-MoveableEntityBlock  |anvillib_moveable_entity_block|2.0.0+snapshot.502  |Manifest: ee15ba69292565ac56d6572336153e4c75cc12a04dc9562ed4c54367ffec977c
+		anvillib-multiblock-neoforge-26.1-2.0.0+snapshot.5|AnvilLib-Multiblock           |anvillib_multiblock           |2.0.0+snapshot.502  |Manifest: c180ad3eaa9d6e2dc87c3cfc315c491b52ed03a64f2cbb7131a9e1ec7a0b04b0
+		anvillib-network-neoforge-26.1-2.0.0+snapshot.502.|AnvilLib-Network              |anvillib_network              |2.0.0+snapshot.502  |Manifest: b4f75d349da092eda6842bd74db1fa55a33aab45be5268eff1e307a86a56e4c0
+		anvillib-recipe-neoforge-26.1-2.0.0+snapshot.502.j|AnvilLib-Recipe               |anvillib_recipe               |2.0.0+snapshot.502  |Manifest: 98a4360fc37bf83e5841d263a2bda392fc2152aad884a91b3dc1469995121837
+		anvillib-registrum-neoforge-26.1-2.0.0+snapshot.50|AnvilLib-Registrum            |anvillib_registrum            |2.0.0+snapshot.502  |Manifest: 2c694c78e48bdecc76a6b40c8fe601afd3455a0f3241ebcfeabfb9225dff5d1c
+		anvillib-rendering-neoforge-26.1-2.0.0+snapshot.50|AnvilLib-Rendering            |anvillib_rendering            |2.0.0+snapshot.502  |Manifest: c21284b77b7d41de8fa69e38ca3f1fb3153e5fb7529ace907debad80d5b5c859
+		anvillib-rpc-neoforge-26.1-2.0.0+snapshot.502.jar |AnvilLib-RPC                  |anvillib_rpc                  |2.0.0+snapshot.502  |Manifest: 470cd0df20a6d0f993c5a7e972b9299552bc92672bd0c01cc80ceb0193fafc66
+		anvillib-space-select-neoforge-26.1-2.0.0+snapshot|AnvilLib-SpaceSelect          |anvillib_space_select         |2.0.0+snapshot.502  |Manifest: e3c1e52b6cb9cd89d09ae00e459d89cb86b25909a24968c01c6924c3577bd55a
+		anvillib-sync-neoforge-26.1-2.0.0+snapshot.502.jar|AnvilLib-Sync                 |anvillib_sync                 |2.0.0+snapshot.502  |Manifest: 049c072b41ce19c45828e338ccc404a4bc7eeaca862110f4d9a0e7a2a43f9fa4
+		anvillib-util-neoforge-26.1-2.0.0+snapshot.502.jar|AnvilLib-Util                 |anvillib_util                 |2.0.0+snapshot.502  |Manifest: 5c107f43d82a6983a1ca3dcea03d29a35bbb446adfd69139e61ee6b7e6d03fdf
+		anvillib-wheel-neoforge-26.1-2.0.0+snapshot.502.ja|AnvilLib-Wheel                |anvillib_wheel                |2.0.0+snapshot.502  |Manifest: e33d30d83ddd2dceae92b61926b15a91a035bfa4059da47bf37fc6d8fb1eb501
+		appleskin-neoforge-mc26.1-3.0.9.jar               |AppleSkin                     |appleskin                     |3.0.9+mc26.1        |Manifest: 32bfe1ed3dea0684259568dbf2b6fe02e939bf398e54af383238bb3b8cac4da6
+		conditional-mixin-neoforge-0.6.4.jar              |conditional mixin             |conditional_mixin             |0.6.4               |Manifest: 2a4d2c4941382cd4e695c0f2d119e59d737566ac95b9da7cfdb7d9d348d95fcf
+		fabric-api-base-2.0.3+b11575294c.jar              |Forgified Fabric API Base     |fabric_api_base               |2.0.3+b11575294c    |Manifest: d88a0295abc51db4d2896b4aaef29c6cac3139ac819142ce731be115d0039e1b
+		fabric-networking-api-v1-6.3.1+64200f3a4c.jar     |Forgified Fabric Networking AP|fabric_networking_api_v1      |6.3.1+64200f3a4c    |Manifest: 22c2bae26bbf87f86c115ad17b09ac657be36d7d56c4609ed7229862382725c4
+		foxified-classtweaker-0.1.0-alpha.4.jar           |FoxifiedClassTweaker          |foxified_classtweaker         |0.1.0-alpha.4       |Manifest: e434d0664c46702652675d3d3a1b5986d9b78bdc2aafd32f5b07557dab3421a6
+		Jade-mc26.1-NeoForge-26.1.8.jar                   |Jade                          |jade                          |26.1.8+neoforge     |Manifest: 6e7faa597e90e65403fc8673fbc492668f5fd1caca2ede17d7c32a6cd614bea9
+		jei-26.1.2-neoforge-29.20.0.60.jar                |Just Enough Items             |jei                           |29.20.0.60          |Manifest: 603a5e1d18f4a7573fa17cf2cca2049ef65d54c9174dc274ddbca5713cc503e7
+		mafglib-0.5.5+mc26.1.2.jar                        |MaFgLib                       |mafglib                       |0.5.5+mc26.1.2      |Manifest: 6c630254acad19de158f9735a79d1ea32be2aae48aecc668ed4f833bf525fe73
+		minecraft-client-patched-26.1.2.87.jar            |Minecraft                     |minecraft                     |26.1.2              |Manifest: f97e5fc71d8818d3cc74ba96738b3aca787d6c741467e5cc4e4d760d2cfc74f7
+		neoforge-26.1.2.87-universal.jar                  |NeoForge                      |neoforge                      |26.1.2.87           |Manifest: 2842ea4e015f6c0e92ae3a1eabea2cfb77eff6d8625845d760bbc22116d7e6fc
+		patchouli-neoforge-26.1-94.jar                    |Patchouli                     |patchouli                     |26.1-94             |Manifest: 00f9e611930614eacd565916c906a4341363e4a43e271c1a01bda8227707dd49
+		reeses-sodium-options-neoforge-2.2.3+mc26.1.2.jar |Reese's Sodium Options        |reeses_sodium_options         |2.2.3+mc26.1.2      |Manifest: 8e9760d6834475070289c82cde381274970514b478a71c3ebeba7303a30de86c
+		net.caffeinemc.sodium-neoforge-0.9.2-alpha.3+mc26.|Sodium                        |sodium                        |0.9.2-alpha.3+mc26.1|Manifest: 3472c90ad9143b76f5c226da6476685c6367dadc67d070fb27fab3757469b7b7
+		sodium-extra-neoforge-0.9.3+mc26.1.2.jar          |Sodium Extra                  |sodium_extra                  |0.9.3+mc26.1.2      |Manifest: 8e313f44912a4b7db53ebca0ebc7a9e1353078a964b24ce05d1339bbe2993ca7
+		touhoulittlemaid-2.0.0-neoforge+mc26.1.2-snapshot.|Touhou Little Maid            |touhou_little_maid            |2.0.0-neoforge+mc26.|Manifest: f109b3008a7b3145018bbd933dc9c1fc562602f297759be8691d9609a012a476
+		tweakerge-0.5.0+mc26.1.2.jar                      |Tweakerge                     |tweakerge                     |0.5.0+mc26.1.2      |Manifest: 915340013a80bf899271882b914b0a20c342a912a2db2c65fec501754a1b5077
+		veinminer-neoforge-2.10.4.jar                     |Veinminer                     |veinminer                     |2.10.4              |Manifest: 7a5d5584bfdfdfa1d19a623146bfb2df494c47079531c49d93b17604df16c24e
+		veinminer-client-neoforge-2.10.1.jar              |Veinminer Client              |veinminer_client              |2.10.1              |Manifest: f0d8cc6bba5888aa7ce1a6a6149af4951052695e4b55d60ff48d409670635708
+		xaerominimap-neoforge-26.1.2-26.4.2.jar           |Xaero's Minimap               |xaerominimap                  |26.4.2              |Manifest: 5c421dd3dfe133023ddb07c4e32e7b9cdae4935e32b3bfb43bc4b55e40702ee0
+		xaeroworldmap-neoforge-26.1.2-1.44.2.jar          |Xaero's World Map             |xaeroworldmap                 |1.44.2              |Manifest: da308bfc71f983fe5f02834881fe9d804001c485d2f6f8cd71852b9ae69cfbd6
+		xaerolib-neoforge-26.1.2-1.7.1.jar                |XaeroLib                      |xaerolib                      |1.7.1               |Manifest: d834085cb6553563a968f1b82b304be8766dd24d1405526ebc9d96e8af9caf8c
+	Crash Report UUID: 55e87a29-beec-4a94-a51f-d960de651809
+	FML: 11.0.15
+	NeoForge: 26.1.2.87

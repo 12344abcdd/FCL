@@ -1,0 +1,167 @@
+---- Minecraft Crash Report ----
+// I blame Dinnerbone.
+
+Time: 2026-08-01 16:09:59
+Description: Ticking entity
+
+java.lang.IllegalArgumentException: Start element (9223367638808264704) is larger than end element (-9223372036854775808)
+	at it.unimi.dsi.fastutil.longs.LongAVLTreeSet$Subset.<init>(LongAVLTreeSet.java:1080)
+	at it.unimi.dsi.fastutil.longs.LongAVLTreeSet.subSet(LongAVLTreeSet.java:1047)
+	at net.minecraft.world.level.entity.EntitySectionStorage.forEachAccessibleNonEmptySection(EntitySectionStorage.java:48)
+	at net.minecraft.world.level.entity.EntitySectionStorage.getEntities(EntitySectionStorage.java:119)
+	at net.minecraft.world.level.entity.LevelEntityGetterAdapter.get(LevelEntityGetterAdapter.java:45)
+	at net.minecraft.world.level.Level.getEntities(Level.java:812)
+	at net.minecraft.world.level.Level.getEntities(Level.java:805)
+	at net.minecraft.world.level.Level.getEntities(Level.java:798)
+	at net.minecraft.world.level.EntityGetter.getEntitiesOfClass(EntityGetter.java:24)
+	at net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal.findTarget(NearestAttackableTargetGoal.java:66)
+	at net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal.canUse(NearestAttackableTargetGoal.java:54)
+	at net.minecraft.world.entity.ai.goal.WrappedGoal.canUse(WrappedGoal.java:22)
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tick(GoalSelector.java:81)
+	at net.minecraft.world.entity.Mob.serverAiStep(Mob.java:732)
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:3092)
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:456)
+	at net.minecraft.world.entity.monster.Monster.aiStep(Monster.java:45)
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2804)
+	at net.minecraft.world.entity.Mob.tick(Mob.java:344)
+	at net.minecraft.world.entity.monster.skeleton.Skeleton.tick(Skeleton.java:69)
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:832)
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:560)
+	at net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:445)
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:426)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1117)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:985)
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1015)
+	at net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:122)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:763)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Server thread
+Stacktrace:
+	at it.unimi.dsi.fastutil.longs.LongAVLTreeSet$Subset.<init>(LongAVLTreeSet.java:1080)
+	at it.unimi.dsi.fastutil.longs.LongAVLTreeSet.subSet(LongAVLTreeSet.java:1047)
+	at net.minecraft.world.level.entity.EntitySectionStorage.forEachAccessibleNonEmptySection(EntitySectionStorage.java:48)
+	at net.minecraft.world.level.entity.EntitySectionStorage.getEntities(EntitySectionStorage.java:119)
+	at net.minecraft.world.level.entity.LevelEntityGetterAdapter.get(LevelEntityGetterAdapter.java:45)
+	at net.minecraft.world.level.Level.getEntities(Level.java:812)
+	at net.minecraft.world.level.Level.getEntities(Level.java:805)
+	at net.minecraft.world.level.Level.getEntities(Level.java:798)
+	at net.minecraft.world.level.EntityGetter.getEntitiesOfClass(EntityGetter.java:24)
+	at net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal.findTarget(NearestAttackableTargetGoal.java:66)
+	at net.minecraft.world.entity.ai.goal.target.NearestAttackableTargetGoal.canUse(NearestAttackableTargetGoal.java:54)
+	at net.minecraft.world.entity.ai.goal.WrappedGoal.canUse(WrappedGoal.java:22)
+	at net.minecraft.world.entity.ai.goal.GoalSelector.tick(GoalSelector.java:81)
+	at net.minecraft.world.entity.Mob.serverAiStep(Mob.java:732)
+	at net.minecraft.world.entity.LivingEntity.aiStep(LivingEntity.java:3092)
+	at net.minecraft.world.entity.Mob.aiStep(Mob.java:456)
+	at net.minecraft.world.entity.monster.Monster.aiStep(Monster.java:45)
+	at net.minecraft.world.entity.LivingEntity.tick(LivingEntity.java:2804)
+	at net.minecraft.world.entity.Mob.tick(Mob.java:344)
+	at net.minecraft.world.entity.monster.skeleton.Skeleton.tick(Skeleton.java:69)
+	at net.minecraft.server.level.ServerLevel.tickNonPassenger(ServerLevel.java:832)
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:560)
+	at net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:445)
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+
+-- Entity being ticked --
+Details:
+	Entity Type: minecraft:skeleton (net.minecraft.world.entity.monster.skeleton.Skeleton)
+	Entity ID: 580
+	Entity Name: 骷髅
+	Entity's Exact location: 33554399.50, 28.00, -351.50
+	Entity's Block location: World: (33554399,28,-352), Section: (at 15,12,0 in 2097149,1,-22; chunk contains blocks 33554384,-64,-352 to 33554399,319,-337), Region: (65535,-1; contains chunks 2097120,-32 to 2097151,-1, blocks 33553920,-64,-512 to 33554431,319,-1)
+	Entity's Momentum: 0.00, 0.00, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at net.minecraft.world.level.Level.guardEntityTick(Level.java:560)
+	at net.minecraft.server.level.ServerLevel.lambda$tick$0(ServerLevel.java:445)
+	at net.minecraft.world.level.entity.EntityTickList.forEach(EntityTickList.java:53)
+	at net.minecraft.server.level.ServerLevel.tick(ServerLevel.java:426)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1117)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:985)
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1015)
+	at net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:122)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:763)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- Affected level --
+Details:
+	All players: 1 total; ServerPlayer{name=abcdd, id=86, pos=(3.3554400299999997E7, 64.5382690993943, -319.34159339640985), mode=CREATIVE, permission=owner}
+	Chunk stats: 960
+	Level dimension: minecraft:overworld
+	Level time: 2391 game time, 2391 day time
+	Level spawn location: World: (-192,69,-272), Section: (at 0,5,0 in -12,4,-17; chunk contains blocks -192,-64,-272 to -177,319,-257), Region: (-1,-1; contains chunks -32,-32 to -1,-1, blocks -512,-64,-512 to -1,319,-1)
+	Level name: 新的世界
+	Level game mode: Game mode: creative (ID 1). Hardcore: false. Commands: true
+	Known server brands: vanilla
+	Removed feature flags: 
+	Level was modded: true
+	Level storage version: 0x04ABD - Anvil
+	Loaded entity count: 16
+	Server weather: Rain time: 177143 (now: false), thunder time: 106468 (now: false)
+Stacktrace:
+	at net.minecraft.server.level.ServerLevel.fillReportDetails(ServerLevel.java:1849)
+	at net.minecraft.server.MinecraftServer.tickChildren(MinecraftServer.java:1120)
+	at net.minecraft.server.MinecraftServer.tickServer(MinecraftServer.java:985)
+	at net.minecraft.client.server.IntegratedServer.tickServer(IntegratedServer.java:149)
+	at net.minecraft.server.MinecraftServer.processPacketsAndTick(MinecraftServer.java:1015)
+	at net.minecraft.client.server.IntegratedServer.processPacketsAndTick(IntegratedServer.java:122)
+	at net.minecraft.server.MinecraftServer.runServer(MinecraftServer.java:763)
+	at net.minecraft.server.MinecraftServer.lambda$spin$0(MinecraftServer.java:299)
+	at java.base/java.lang.Thread.run(Thread.java:1474)
+
+-- System Details --
+Details:
+	Minecraft Version: Development Version
+	Minecraft Version ID: ad078ee67e474b2089fb4564a22e30bc
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.3-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1491322880 bytes (1422 MiB) / 4294967296 bytes (4096 MiB) up to 4294967296 bytes (4096 MiB)
+	Memory (heap): init: 4096MiB, used: 2672MiB, committed: 4096MiB, max: 4096MiB
+	Memory (non-head): init: 007MiB, used: 231MiB, committed: 233MiB, max: 000MiB
+	CPUs: 8
+	processor: ~~ERROR~~ UncheckedIOException: java.nio.file.AccessDeniedException: /sys/devices/system/cpu/bus_dcvs/DDR/cur_freq
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 21841.69
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 8791.00
+	Space in storage for jna.tmpdir (MiB): available: 166966.45, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 166966.45, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 166966.45, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 166966.45, total: 236417.98
+	Space in storage for workdir (MiB): available: 166966.45, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 296s (29601000.00%), kernel: 22s (2168000.00%), total: 318s (31769000.00%)
+	Process Virtual Size (MiB): 25430.57
+	Process Resident Size (MiB): 3846.93
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx4096m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['abcdd'/86, l='ServerLevel[新的世界]', x=33554400.30, y=64.54, z=-319.34]]
+	Active Data Packs: vanilla
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -8869931098439604725
+	Suppressed Exceptions: ~~NONE~~
+	Type: Integrated Server
+	Is Modded: Very likely; Client jar signature invalidated; Server jar signature invalidated
+	Launched Version: 26.2big

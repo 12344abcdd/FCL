@@ -1,0 +1,43 @@
+{
+  "schemaVersion" : 1,
+  "id" : "debugify",
+  "version" : "26.2.0.0",
+  "entrypoints" : {
+    "main" : [
+      "dev.isxander.debugify.Debugify::onInitialize"
+    ],
+    "client" : [
+      "dev.isxander.debugify.client.DebugifyClient::onInitializeClient"
+    ],
+    "modmenu" : [
+      "dev.isxander.debugify.client.integrations.ModMenuIntegration"
+    ]
+  },
+  "mixins" : [
+    "debugify.mixins.json",
+    {
+      "config" : "debugify.client.mixins.json",
+      "environment" : "client"
+    }
+  ],
+  "depends" : {
+    "minecraft" : "=26.2",
+    "fabricloader" : ">=0.19",
+    "fabric-resource-loader-v0" : "*"
+  },
+  "suggests" : {
+    "yet_another_config_lib_v3" : "*"
+  },
+  "name" : "Debugify",
+  "description" : "Fixes Minecraft bugs found on the bug tracker\nCredits:\nj-Tai's TieFix - Code used licensed under LGPLv3\n         FlashyReese's Sodium Extra - Code used licensed under LGPLv3\n         Ampflower's 2x2 Surrounded Saplings Fix - Code used licensed under Zlib\n         NoahvdAa's Thorium - Code used licensed under LGPLv3\n         Moulberry's MoulberryTweaks - Code used licensed under MIT",
+  "authors" : [
+    "isXander"
+  ],
+  "contact" : {
+    "homepage" : "https://github.com/isXander/Debugify",
+    "sources" : "https://github.com/isXander/Debugify",
+    "issues" : "https://github.com/isXander/Debugify/issues"
+  },
+  "license" : "LGPL-3.0-or-later",
+  "icon" : "debugify.png"
+}

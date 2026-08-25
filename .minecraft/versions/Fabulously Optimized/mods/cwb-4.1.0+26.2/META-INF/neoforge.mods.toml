@@ -1,0 +1,74 @@
+modLoader = "javafml"
+loaderVersion = "*"
+issueTrackerURL = "https://github.com/Kira-NT/cubes-without-borders/issues"
+license = "MIT"
+
+[[mods]]
+modId = "cwb"
+version = "4.1.0+26.2"
+displayName = "Cubes Without Borders"
+description = '''
+Allows you to play Minecraft in a borderless fullscreen window.
+'''
+authors = "Kira-NT"
+logoFile = "icon.png"
+displayURL = "https://github.com/Kira-NT/cubes-without-borders"
+
+[[dependencies.cwb]]
+modId = "neoforge"
+type = "required"
+versionRange = "[26.2.0.0-beta,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cwb]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.2,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.cwb]]
+modId = "cloth_config"
+type = "optional"
+[dependencies.cwb.mc-publish]
+modrinth = "9s6osm5g"
+curseforge = 348521
+
+[[dependencies.cwb]]
+modId = "yet_another_config_lib_v3"
+type = "optional"
+[dependencies.cwb.mc-publish]
+modrinth = "1eAoo2KR"
+curseforge = 667299
+
+[[dependencies.cwb]]
+modId = "borderlessmining"
+type = "incompatible"
+reason = "You already have a mod that provides borderless fullscreen. Please uninstall \"borderlessmining\"."
+[dependencies.cwb.mc-publish]
+modrinth = "KxYAzYLi"
+curseforge = 1487420
+
+[[dependencies.cwb]]
+modId = "borderlesswindow"
+type = "incompatible"
+reason = "You already have a mod that provides borderless fullscreen. Please uninstall \"borderlesswindow\"."
+[dependencies.cwb.mc-publish]
+modrinth = "CnalMsa0"
+curseforge = 378979
+
+[[dependencies.cwb]]
+modId = "concentration"
+type = "incompatible"
+reason = "You already have a mod that provides borderless fullscreen. Please uninstall \"concentration\"."
+[dependencies.cwb.mc-publish]
+modrinth = "QyvWSZ5S"
+curseforge = 1120678
+
+[[mixins]]
+config = "cwb.mixins.json"
+
+[mc-publish]
+modrinth = "ETlrkaYF"
+curseforge = "975120"

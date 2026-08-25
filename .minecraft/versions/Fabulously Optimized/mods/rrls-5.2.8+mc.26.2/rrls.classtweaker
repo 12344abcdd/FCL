@@ -1,0 +1,54 @@
+classTweaker v1 official
+transitive-inject-interface net/minecraft/client/gui/screens/Overlay org/redlance/dima_dencep/mods/rrls/duck/OverlayExtender
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor innerFill (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/gui/render/TextureSetup;IIIIILjava/lang/Integer;)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor innerFill (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/gui/render/TextureSetup;IIIIILjava/lang/Integer;)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor blitSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIII)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor blitSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIII)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor blitNineSlicedSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;IIIII)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor blitNineSlicedSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;IIIII)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor blitNineSliceInnerSegment (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIIIII)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor blitNineSliceInnerSegment (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/resources/metadata/gui/GuiSpriteScaling$NineSlice;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIIIII)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor blitTiledSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIIIII)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor blitTiledSprite (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/client/renderer/texture/TextureAtlasSprite;IIIIIIIIIII)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor innerBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/resources/Identifier;IIIIFFFFI)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor innerBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lnet/minecraft/resources/Identifier;IIIIFFFFI)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor innerBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuSampler;IIIIFFFFI)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor innerBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuSampler;IIIIFFFFI)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor innerTiledBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuSampler;IIIIIIFFFFI)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor innerTiledBlit (Lcom/mojang/blaze3d/pipeline/RenderPipeline;Lcom/mojang/blaze3d/textures/GpuTextureView;Lcom/mojang/blaze3d/textures/GpuSampler;IIIIIIFFFFI)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor item (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;III)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor item (Lnet/minecraft/world/entity/LivingEntity;Lnet/minecraft/world/level/Level;Lnet/minecraft/world/item/ItemStack;III)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor itemBar (Lnet/minecraft/world/item/ItemStack;II)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor itemBar (Lnet/minecraft/world/item/ItemStack;II)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor itemCount (Lnet/minecraft/client/gui/Font;Lnet/minecraft/world/item/ItemStack;IILjava/lang/String;)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor itemCount (Lnet/minecraft/client/gui/Font;Lnet/minecraft/world/item/ItemStack;IILjava/lang/String;)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor itemCooldown (Lnet/minecraft/world/item/ItemStack;II)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor itemCooldown (Lnet/minecraft/world/item/ItemStack;II)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor setTooltipForNextFrameInternal (Lnet/minecraft/client/gui/Font;Ljava/util/List;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;Lnet/minecraft/resources/Identifier;Z)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor setTooltipForNextFrameInternal (Lnet/minecraft/client/gui/Font;Ljava/util/List;IILnet/minecraft/client/gui/screens/inventory/tooltip/ClientTooltipPositioner;Lnet/minecraft/resources/Identifier;Z)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor componentHoverEffect (Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Style;II)V
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor componentHoverEffect (Lnet/minecraft/client/gui/Font;Lnet/minecraft/network/chat/Style;II)V
+accessible method net/minecraft/client/gui/GuiGraphicsExtractor createDefaultTextParameters (F)Lnet/minecraft/client/gui/ActiveTextCollector$Parameters;
+extendable method net/minecraft/client/gui/GuiGraphicsExtractor createDefaultTextParameters (F)Lnet/minecraft/client/gui/ActiveTextCollector$Parameters;
+accessible field net/minecraft/client/gui/Gui overlay Lnet/minecraft/client/gui/screens/Overlay;
+accessible class net/minecraft/client/resources/server/ServerPackManager$ServerPackData
+accessible field net/minecraft/client/gui/screens/LoadingOverlay currentProgress F
+accessible field net/minecraft/client/gui/font/FontManager fontSets Ljava/util/Map;
+accessible field net/minecraft/client/resources/model/sprite/AtlasManager spriteLookup Ljava/util/Map;
+accessible field net/minecraft/client/renderer/texture/TextureAtlas texturesByName Ljava/util/Map;
+accessible field net/minecraft/client/resources/SplashManager splashes Ljava/util/List;
+accessible field net/minecraft/client/renderer/ShaderManager compilationCache Lnet/minecraft/client/renderer/ShaderManager$CompilationCache;
+accessible field net/minecraft/client/renderer/ShaderManager$CompilationCache configs Lnet/minecraft/client/renderer/ShaderManager$Configs;
+accessible class net/minecraft/client/renderer/ShaderManager$CompilationCache
+accessible method net/minecraft/client/renderer/texture/TextureManager scheduleLoad (Lnet/minecraft/server/packs/resources/ResourceManager;Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/renderer/texture/ReloadableTexture;Ljava/util/concurrent/Executor;)Lnet/minecraft/client/renderer/texture/TextureManager$PendingReload;
+accessible class net/minecraft/client/renderer/texture/TextureManager$PendingReload
+accessible method net/minecraft/client/Minecraft buildInitialScreens (Lnet/minecraft/client/Minecraft$GameLoadCookie;)Ljava/lang/Runnable;
+accessible field net/minecraft/client/renderer/texture/TextureManager resourceManager Lnet/minecraft/server/packs/resources/ResourceManager;
+accessible method net/minecraft/client/renderer/texture/TextureManager loadContentsSafe (Lnet/minecraft/resources/Identifier;Lnet/minecraft/client/renderer/texture/ReloadableTexture;)Lnet/minecraft/client/renderer/texture/TextureContents;
+accessible method net/minecraft/util/ARGB from8BitChannel (I)F
+extendable class net/minecraft/server/packs/resources/PreparableReloadListener$SharedState
+accessible class com/mojang/blaze3d/opengl/GlCommandEncoder
+accessible class net/minecraft/client/resources/model/sprite/AtlasManager$AtlasEntry
+accessible field net/minecraft/client/resources/model/sprite/AtlasManager atlasById Ljava/util/Map;
+accessible field net/minecraft/client/resources/model/sprite/AtlasManager maxMipmapLevels I
+accessible method net/minecraft/client/resources/model/sprite/AtlasManager$AtlasEntry scheduleLoad (Lnet/minecraft/server/packs/resources/ResourceManager;Ljava/util/concurrent/Executor;I)Ljava/util/concurrent/CompletableFuture;

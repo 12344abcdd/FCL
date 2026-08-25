@@ -1,0 +1,201 @@
+---- Minecraft Crash Report ----
+// You're mean.
+
+Time: 2026-07-29 13:33:25
+Description: Extracting render state for an entity in world
+
+java.lang.NullPointerException: Cannot invoke "com.elfmcys.yesstevemodel.ooo0oo0ooo0oo0oo0o0oooO0.OO0OoO00ooOOo0o00O000OoO()" because "<parameter2>" is null
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOoOOOoOOOOOoooOoo0Ooooo$OO0OoO00ooOOo0o00O000OoO.<init>(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.O0OoOoO0oo0O00O0ooo0o0OO.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.O0OoOoO0oo0O00O0ooo0o0OO.O0oo00O0OoooOOOO00ooO000(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OO0000oOOoO0O00OO0Oo0o0o(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198) ~[?:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OooOO0oOOo00OO00oo0oO00o(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.o0Oo00O0Ooo00oOo0O000Ooo(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.OOOoooO00oo000OOOOoO0OO0.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oooo0o0o0ooOoO00OO0ooo0o.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at java.base/java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oooo0o0o0ooOoO00OO0ooo0o.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.87/net.neoforged.neoforge.client.renderstate.RenderStateExtensions.onUpdateEntityRenderState(RenderStateExtensions.java:50) ~[neoforge-26.1.2.87-universal.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.entity.EntityRenderer.createRenderState(EntityRenderer.java:169) ~[minecraft-client-patched-26.1.2.87.jar:?] {}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.entity.EntityRenderDispatcher.extractEntity(EntityRenderDispatcher.java:136) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:mixin[APP:yes_steve_model.mixins.json:client.EntityRenderDispatcherMixin from mod yes_steve_model]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractEntity(LevelRenderer.java:1105) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractVisibleEntities(LevelRenderer.java:889) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractLevel(LevelRenderer.java:586) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extract(GameRenderer.java:421) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.renderFrame(Minecraft.java:1377) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.runTick(Minecraft.java:1329) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:937) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-client-patched-26.1.2.87.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at mio.Wrapper.main(Wrapper.java:21) [MioLaunchWrapper.jar:?] {}
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: Render thread
+Stacktrace:
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOoOOOoOOOOOoooOoo0Ooooo$OO0OoO00ooOOo0o00O000OoO.<init>(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.O0OoOoO0oo0O00O0ooo0o0OO.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.O0OoOoO0oo0O00O0ooo0o0OO.O0oo00O0OoooOOOO00ooO000(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OO0000oOOoO0O00OO0Oo0o0o(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at java.base/java.util.Optional.ifPresentOrElse(Optional.java:198) ~[?:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OooOO0oOOo00OO00oo0oO00o(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.o0Oo00O0Ooo00oOo0O000Ooo(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oOOOO0OoOOOoOoO000oOooo0.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.OOOoooO00oo000OOOOoO0OO0.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oooo0o0o0ooOoO00OO0ooo0o.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at java.base/java.util.Optional.ifPresent(Optional.java:178) ~[?:?] {}
+	at TRANSFORMER/yes_steve_model@2.6.5-neoforge+mc26.1/com.elfmcys.yesstevemodel.oooo0o0o0ooOoO00OO0ooo0o.OO0OoO00ooOOo0o00O000OoO(Unknown Source) ~[ysm-2.6.5-neoforge+mc26.1-hotfix.jar:?] {}
+	at TRANSFORMER/neoforge@26.1.2.87/net.neoforged.neoforge.client.renderstate.RenderStateExtensions.onUpdateEntityRenderState(RenderStateExtensions.java:50) ~[neoforge-26.1.2.87-universal.jar:?] {}
+-- Entity being extracted --
+Details:
+	Entity Type: minecraft:player (net.minecraft.client.player.LocalPlayer)
+	Entity ID: 11
+	Entity Name: abcdd
+	Entity's Exact location: -251.42, 76.00, 92.78
+	Entity's Block location: World: (-252,76,92), Section: (at 4,12,12 in -16,4,5; chunk contains blocks -256,-64,80 to -241,319,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Entity's Momentum: 0.00, -0.08, 0.00
+	Entity's Passengers: []
+	Entity's Vehicle: null
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.entity.EntityRenderDispatcher.extractEntity(EntityRenderDispatcher.java:136) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:mixin[APP:yes_steve_model.mixins.json:client.EntityRenderDispatcherMixin from mod yes_steve_model]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractEntity(LevelRenderer.java:1105) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractVisibleEntities(LevelRenderer.java:889) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractLevel(LevelRenderer.java:586) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extract(GameRenderer.java:421) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.renderFrame(Minecraft.java:1377) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.runTick(Minecraft.java:1329) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:937) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-client-patched-26.1.2.87.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at mio.Wrapper.main(Wrapper.java:21) [MioLaunchWrapper.jar:?] {}
+
+
+-- Renderer details --
+Details:
+	Assigned renderer: net.minecraft.client.renderer.entity.player.AvatarRenderer@237c078c
+	Delta: 0.08001685
+Stacktrace:
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.entity.EntityRenderDispatcher.fillRendererDetails(EntityRenderDispatcher.java:187) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:mixin[APP:yes_steve_model.mixins.json:client.EntityRenderDispatcherMixin from mod yes_steve_model]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.entity.EntityRenderDispatcher.extractEntity(EntityRenderDispatcher.java:141) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:mixin[APP:yes_steve_model.mixins.json:client.EntityRenderDispatcherMixin from mod yes_steve_model]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractEntity(LevelRenderer.java:1105) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractVisibleEntities(LevelRenderer.java:889) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.LevelRenderer.extractLevel(LevelRenderer.java:586) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer,neoforge:access_transformer,neoforge:mixin[APP:yes_steve_model.mixins.json:client.WorldRendererMixin from mod yes_steve_model,APP:touhou_little_maid.mixins.json:client.LevelRendererMixin from mod touhou_little_maid]}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.renderer.GameRenderer.extract(GameRenderer.java:421) ~[minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.renderFrame(Minecraft.java:1377) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.runTick(Minecraft.java:1329) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.Minecraft.run(Minecraft.java:937) [minecraft-client-patched-26.1.2.87.jar:?] {neoforge:access_transformer}
+	at TRANSFORMER/minecraft@26.1.2/net.minecraft.client.main.Main.main(Main.java:246) [minecraft-client-patched-26.1.2.87.jar:?] {}
+	at net.neoforged.fml.startup.Client.main(Client.java:19) [loader-11.0.15.jar:11.0] {}
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104) ~[?:?] {}
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565) ~[?:?] {}
+	at mio.Wrapper.main(Wrapper.java:21) [MioLaunchWrapper.jar:?] {}
+
+
+-- Uptime --
+Details:
+	JVM uptime: 227.842s
+	Wall uptime: 214.897s
+	High-res time: 226.304s
+	Client ticks: 3944 ticks / 197.200s
+
+-- Affected level --
+Details:
+	All players: 1 total; LocalPlayer{name=abcdd, id=11, pos=(-251.424106829002, 76.0, 92.77715986368403), mode=CREATIVE, permission=owner}
+	Chunk stats: 289, 157
+	Level dimension: minecraft:overworld
+	Level time: 1838 game time, 1837 day time
+	Level spawn location: World: (-256,75,80), Section: (at 0,11,0 in -16,4,5; chunk contains blocks -256,-64,80 to -241,319,95), Region: (-1,0; contains chunks -32,0 to -1,31, blocks -512,-64,0 to -1,319,511)
+	Server brand: neoforge
+	Server type: Integrated singleplayer server
+	Tracked entity count: 99
+	Client weather: Raining: false, thundering: false
+
+-- Last reload --
+Details:
+	Reload number: 1
+	Reload reason: initial
+	Finished: Yes
+	Packs: vanilla, mod_resources, mod/yes_steve_model, mod/touhou_little_maid, mod/neoforge
+
+-- System Details --
+Details:
+	Minecraft Version: 26.1.2
+	Minecraft Version ID: 26.1.2
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.3-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 1369709008 bytes (1306 MiB) / 4294967296 bytes (4096 MiB) up to 6668943360 bytes (6360 MiB)
+	Memory (heap): init: 4096MiB, used: 2783MiB, committed: 4096MiB, max: 6360MiB
+	Memory (non-head): init: 007MiB, used: 271MiB, committed: 277MiB, max: 000MiB
+	CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 13037.64
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 2280.71
+	Space in storage for jna.tmpdir (MiB): available: 189012.34, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 189012.34, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 189012.34, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 189012.34, total: 236417.98
+	Space in storage for workdir (MiB): available: 189012.34, total: 236417.98
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx6360m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Launched Version: 26.1.2-NeoForge
+	Launcher name: Fold Craft Launcher
+	Backend library: LWJGL version 3.3.6-snapshot
+	Backend API: Adreno (TM) 830 | OpenGL ES 3.2 GL version 3.1 §aKrypton Wrapper §bRelease 0.4.5§r, ptitSeb & BZLZHH
+	Window size: 2620x1280
+	GFLW Platform: x11
+	Render Extensions: GL_EXT_texture_filter_anisotropic
+	GL debug messages: <debugging unavailable>
+	Is Modded: Definitely; Client brand changed to 'neoforge'; Server brand changed to 'neoforge'
+	Universe: 400921fb54442d18
+	Type: Integrated Server
+	Transparency: regular
+	Render Distance: 5/5 chunks
+	Resource Packs: vanilla, mod_resources, mod/yes_steve_model (incompatible), mod/touhou_little_maid (incompatible), mod/neoforge (incompatible)
+	Sound Cache: 2457870 bytes in 21 buffers
+	Current Language: zh_cn
+	Locale: zh_CN
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: <unknown>
+	Server Running: true
+	Player Count: 1 / 8; [ServerPlayer['abcdd'/11, l='ServerLevel[新的世界]', x=-251.42, y=76.00, z=92.78]]
+	Active Data Packs: vanilla, mod_data, mod/yes_steve_model (incompatible), mod/touhou_little_maid (incompatible), mod/neoforge
+	Available Data Packs: minecart_improvements, redstone_experiments, trade_rebalance, vanilla, mod/neoforge, mod/touhou_little_maid (incompatible), mod/yes_steve_model (incompatible), mod_data
+	Enabled Feature Flags: minecraft:vanilla
+	World Generation: Stable
+	World Seed: -5301081559723498198
+	Suppressed Exceptions: ~~NONE~~
+	Class Processors: 
+		00.00%: neoforge:computing_frames (marker)
+		00.00%: neoforge:runtime_enum_extender
+		03.94%: neoforge:access_transformer
+		00.47%: neoforge:mixin
+		00.00%: neoforge:simple_processors_default (marker)
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.biome.biome
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.block.flowerpotblock
+		00.01%: neoforge.coremods:field_to_getter.net.minecraft.world.level.levelgen.structure.structure
+		00.23%: neoforge.coremods:method_redirector
+	Mod List: 
+		minecraft-client-patched-26.1.2.87.jar            |Minecraft                     |minecraft                     |26.1.2              |Manifest: f97e5fc71d8818d3cc74ba96738b3aca787d6c741467e5cc4e4d760d2cfc74f7
+		neoforge-26.1.2.87-universal.jar                  |NeoForge                      |neoforge                      |26.1.2.87           |Manifest: 2842ea4e015f6c0e92ae3a1eabea2cfb77eff6d8625845d760bbc22116d7e6fc
+		touhoulittlemaid-2.0.0-neoforge+mc26.1.2-snapshot.|Touhou Little Maid            |touhou_little_maid            |2.0.0-neoforge+mc26.|Manifest: 79793763fc4470b4407a05d267fa7966d09e97a29de21a1dc701a5385bbc52fb
+		ysm-2.6.5-neoforge+mc26.1-hotfix.jar              |Yes Steve Model               |yes_steve_model               |2.6.5-neoforge+mc26.|Manifest: 4e3dc02f4a0a3719422e7760036aee942755379e68c4e1a0a465fe7a820fc9b8
+	Crash Report UUID: aedd14fd-10b3-4e9e-a384-c40fd2f45b17
+	FML: 11.0.15
+	NeoForge: 26.1.2.87

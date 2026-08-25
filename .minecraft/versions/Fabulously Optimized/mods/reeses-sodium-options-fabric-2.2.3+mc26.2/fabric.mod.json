@@ -1,0 +1,64 @@
+{
+  "schemaVersion": 1,
+  "id": "reeses-sodium-options",
+  "version": "2.2.3+mc26.2",
+  "name": "Reese's Sodium Options",
+  "description": "Replaces Sodium's Options Screen",
+  "authors": [
+    {
+      "name": "FlashyReese",
+      "contact": {
+        "homepage": "https://flashyreese.me"
+      }
+    }
+  ],
+  "contact": {
+    "homepage": "https://github.com/FlashyReese/reeses-sodium-options",
+    "issues": "https://github.com/FlashyReese/reeses-sodium-options/issues",
+    "sources": "https://github.com/FlashyReese/reeses-sodium-options.git"
+  },
+  "icon": "assets/reeses-sodium-options/icon.png",
+  "license": "MIT",
+  "environment": "client",
+  "entrypoints": {
+    "controlify": [
+      "me.flashyreese.mods.reeses_sodium_options.client.controlify.ReeseSodiumOptionsControlifyEntrypoint"
+    ],
+    "sodium:config_api_user": [
+      "me.flashyreese.mods.reeses_sodium_options.client.config.ReeseSodiumOptionsConfigEntryPoint"
+    ]
+  },
+  "mixins": [
+    "reeses-sodium-options.mixins.json"
+  ],
+  "custom": {
+    "modmenu": {
+      "parent": {
+        "id": "sodium"
+      },
+      "links": {
+        "modmenu.curseforge": "https://curseforge.com/minecraft/mc-mods/reeses-sodium-options",
+        "modmenu.discord": "https://flashyreese.me/discord",
+        "modmenu.donate": "https://ko-fi.com/flashyreese",
+        "modmenu.github_releases": "https://github.com/FlashyReese/reeses-sodium-options/releases",
+        "modmenu.kofi": "https://ko-fi.com/flashyreese",
+        "modmenu.modrinth": "https://modrinth.com/mod/reeses-sodium-options"
+      }
+    }
+  },
+  "depends": {
+    "minecraft": ">=26.2",
+    "sodium": ">=0.9.1"
+  },
+  "suggests": {
+    "controlify": ">=3.0.2"
+  },
+  "breaks": {
+    "iris": "<1.1.4",
+    "sodium-extra": "<0.5.3",
+    "sodium": "<0.5.8"
+  },
+  "recommends": {
+    "sodium-extra": ">=0.4.2"
+  }
+}

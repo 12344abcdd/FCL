@@ -1,0 +1,31 @@
+{
+  "required": true,
+  "minVersion": "0.8",
+  "package": "jerozgen.languagereload.mixin",
+  "compatibilityLevel": "JAVA_25",
+  "client": [
+    "AdvancementsScreenMixin",
+    "AdvancementTabMixin",
+    "AdvancementWidgetAccessor",
+    "BookViewScreenAccessor",
+    "ClientChunkCacheAccessor",
+    "ClientChunkCacheStorageAccessor",
+    "OptionsMixin",
+    "KeyMappingAccessor",
+    "KeyboardHandlerMixin",
+    "LanguageManagerAccessor",
+    "LanguageManagerMixin",
+    "LanguageMixin",
+    "LanguageSelectScreenMixin",
+    "LanguageSelectionListAccessor",
+    "RecipeBookComponentMixin",
+    "SessionSearchTreesMixin",
+    "SignTextAccessor",
+    "TextDisplayAccessor",
+    "TranslatableContentsMixin",
+    "ClientLanguageMixin"
+  ],
+  "injectors": {
+    "defaultRequire": 1
+  }
+}

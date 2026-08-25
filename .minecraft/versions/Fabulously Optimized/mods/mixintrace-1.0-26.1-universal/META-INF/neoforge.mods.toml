@@ -1,0 +1,27 @@
+modLoader = "javafml"
+loaderVersion = "[2,)"
+license = "MIT"
+issueTrackerURL = "https://github.com/IAFEnvoy/MixinTrace-Reborn/issues"
+
+[[mods]]
+modId = "mixintrace"
+displayName = "MixinTrace Reborn"
+version = "1.0"
+logoFile = "logo.png"
+authors = "comp500, IAFEnvoy"
+description = '''Adds a list of mixins in the stack trace to crash reports.'''
+
+[[dependencies.mixintrace]]
+modId = "neoforge"
+type = "required"
+versionRange = "[1,)"
+ordering = "NONE"
+side = "BOTH"
+
+[[dependencies.mixintrace]]
+modId = "minecraft"
+type = "required"
+versionRange = "[26.1,)"
+
+[[mixins]]
+config = "mixintrace.mixins.json"

@@ -1,0 +1,136 @@
+---- Minecraft Crash Report ----
+// But it works on my machine.
+
+Time: 2026-08-24 14:00:18
+Description: Loading library SDL
+
+java.lang.UnsatisfiedLinkError: Failed to locate library: libSDL3.so
+	at org.lwjgl.system.Library.loadNative(Library.java:362)
+	at org.lwjgl.system.Library.loadNative(Library.java:252)
+	at org.lwjgl.sdl.SDL.<clinit>(SDL.java:12)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadSdl(NativeLibrariesBootstrap.java:282)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibrary(NativeLibrariesBootstrap.java:199)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibraries(NativeLibrariesBootstrap.java:103)
+	at net.minecraft.client.main.Main.main(Main.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+
+A detailed walkthrough of the error, its code path and all known details is as follows:
+---------------------------------------------------------------------------------------
+
+-- Head --
+Thread: main
+Stacktrace:
+	at org.lwjgl.system.Library.loadNative(Library.java:362)
+	at org.lwjgl.system.Library.loadNative(Library.java:252)
+	at org.lwjgl.sdl.SDL.<clinit>(SDL.java:12)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadSdl(NativeLibrariesBootstrap.java:282)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibrary(NativeLibrariesBootstrap.java:199)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibraries(NativeLibrariesBootstrap.java:103)
+
+-- Library directory contents --
+Details:
+	Contents of java.library.path : <not a directory>
+	Contents of org.lwjgl.librarypath: <not set>
+	LWJGL platform: LINUX
+	LWJGL architecture: ARM64
+Stacktrace:
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibrary(NativeLibrariesBootstrap.java:199)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibraries(NativeLibrariesBootstrap.java:103)
+	at net.minecraft.client.main.Main.main(Main.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+-- LWJGL debug log --
+Details:
+	Log: [LWJGL] Failed to load a library. Possible solutions:
+	a) Add the directory that contains the shared library to -Djava.library.path or -Dorg.lwjgl.librarypath.
+	b) Add the JAR that contains the shared library to the classpath.
+[LWJGL] Enable debug mode with -Dorg.lwjgl.util.Debug=true for better diagnostics.
+
+Stacktrace:
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibrary(NativeLibrariesBootstrap.java:199)
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibraries(NativeLibrariesBootstrap.java:103)
+	at net.minecraft.client.main.Main.main(Main.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+-- Libraries loaded --
+Details:
+	Loading order: OpenAL,SDL,OpenGL,STB,spvc,freetype,vma,shaderc
+	Loading index: 1
+Stacktrace:
+	at com.mojang.blaze3d.platform.NativeLibrariesBootstrap.loadLibraries(NativeLibrariesBootstrap.java:103)
+	at net.minecraft.client.main.Main.main(Main.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+-- Initialization --
+Details:
+	Modules: 
+Stacktrace:
+	at net.minecraft.client.main.Main.main(Main.java:142)
+	at java.base/jdk.internal.reflect.DirectMethodHandleAccessor.invoke(DirectMethodHandleAccessor.java:104)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:565)
+	at mio.Wrapper.main(Wrapper.java:21)
+
+-- System Details --
+Details:
+	Minecraft Version: 26.3 Snapshot 9
+	Minecraft Version ID: 26.3-snapshot-9
+	Operating System: Linux (aarch64) version Android-16
+	Java Version: 25.0.5-internal, N/A
+	Java VM Version: OpenJDK 64-Bit Server VM (mixed mode), Oracle Corporation
+	Memory: 4040818688 bytes (3853 MiB) / 4294967296 bytes (4096 MiB) up to 6920601600 bytes (6600 MiB)
+	Memory (heap): init: 4096MiB, used: 238MiB, committed: 4096MiB, max: 6600MiB
+	Memory (non-heap): init: 007MiB, used: 041MiB, committed: 044MiB, max: 000MiB
+	CPUs: 8
+	Processor Vendor: Qualcomm
+	Processor Name: SM8750
+	Identifier: 0x51 Family 8 Model 0x001 Stepping r4p4
+	Microarchitecture: unknown
+	Frequency (GHz): -0.00
+	Number of physical packages: 1
+	Number of physical CPUs: 8
+	Number of logical CPUs: 8
+	Graphics card #0 name: unknown
+	Graphics card #0 vendor: unknown
+	Graphics card #0 VRAM (MiB): 0.00
+	Graphics card #0 deviceId: unknown
+	Graphics card #0 versionInfo: unknown
+	Virtual memory max (MiB): 23940.86
+	Virtual memory used (MiB): 7307.60
+	Swap memory total (MiB): 16384.00
+	Swap memory used (MiB): 463.66
+	Space in storage for jna.tmpdir (MiB): available: 125008.92, total: 236417.98
+	Space in storage for org.lwjgl.system.SharedLibraryExtractPath (MiB): available: 125008.92, total: 236417.98
+	Space in storage for io.netty.native.workdir (MiB): available: 125008.92, total: 236417.98
+	Space in storage for java.io.tmpdir (MiB): available: 125008.92, total: 236417.98
+	Space in storage for workdir (MiB): available: 125008.92, total: 236417.98
+	Operating System Version: Toybox Unknown unknown (unknown)
+	Process Elevated: false
+	Process Loads: Uptime: 0s, user: 34s (3405000.00%), kernel: 20s (1979000.00%), total: 54s (5384000.00%)
+	Process Virtual Size (MiB): 25933.16
+	Process Resident Size (MiB): 1088.22
+	JVM Flags: 4 total; -Xbootclasspath/a:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-agent.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-shared-1.19.1-SNAPSHOT.jar:/data/user/0/com.tungsten.fcl/app_runtime/caciocavallo17/cacio-tta-1.19.1-SNAPSHOT.jar -Xmx6600m -Xms4096m -XX:ActiveProcessorCount=8
+	Debug Flags: 0 total; 
+	Launched Version: 26.3-snapshot-9
+	Launcher name: Fold Craft Launcher
+	Backend library: LWJGL version 3.4.1-snapshot+SNAPSHOT
+	Window size: <not initialized>
+	Surface Info: <no surface>
+	SDL Platform: ~~ERROR~~ NoClassDefFoundError: Could not initialize class org.lwjgl.sdl.SDL
+	Graphics Device: <none>
+	GL debug messages: <no renderer available>
+	Is Modded: Probably not. Client jar signature and brand is untouched
+	Universe: 404
+	Type: Client
+	Locale: zh_CN
+	System encoding: UTF-8
+	File encoding: UTF-8
+	CPU: 8x SM8750
